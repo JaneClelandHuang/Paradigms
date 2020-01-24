@@ -268,4 +268,65 @@ console.log("\nReversed order:");
 for(i in fruits)
 	console.log(fruits[i]);
 
+// Example 10
+function Circle(centerX=0, centerY=0, radius=1, color='black') { 
+	this.x = centerX; 
+	this.y = centerY; 
+	this.radius = radius; 
+	this.color = color; 
+} 
+
+Circle.prototype.area = function () { 
+	return Math.PI * this.radius * this.radius; 
+}; 
+
+Circle.prototype.circumference = function () { 
+	return 2 * Math.PI * this.radius; 
+}; 
+
+const assert = require('assert'); 
+const c = new Circle(1, 5); 
+assert.deepEqual(c, {x:1, y:5, radius:1, color:'black'}) 
+assert(c.area() === Math.PI); 
+assert(c.circumference() === 2 * Math.PI); 
+assert(Object.getPrototypeOf(c) === Circle.prototype); 
+assert(c.constructor) === Circle; 
+assert(typeof(c) === 'object');
+
+// Example 10
+var assert = require('assert');
+
+// Constructor function
+// Note the default parameter values that are used if nodeName
+// parameters are provided
+function Circle(centerX=0, centerY=0, radius=1, color='black') { 
+	this.x = centerX; 
+	this.y = centerY; 
+	this.radius = radius; 
+	this.color = color; 
+} 
+
+// The area and circumference methods are stored
+// as properties in the prototype
+Circle.prototype.area = function () { 
+	return Math.PI * this.radius * this.radius; 
+}; 
+
+Circle.prototype.circumference = function () { 
+	return 2 * Math.PI * this.radius; 
+}; 
+
+// Create a new object with prototype Circle.prototype
+// and binds the now initialized object to the variable c
+const c = new Circle(1, 5); 
+
+// Some interesting asserts
+// Do these make good tests or not?
+assert.deepEqual(c, {x:1, y:5, radius:1, color:'black'}) 
+assert(c.area() === Math.PI); 
+assert(c.circumference() === 2 * Math.PI); 
+assert(Object.getPrototypeOf(c) === Circle.prototype); 
+assert(c.constructor) === Circle; 
+assert(typeof(c) === 'object');
+
 
