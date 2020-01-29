@@ -1,0 +1,54 @@
+Issue key,Issue Type,Assigned to,Priority,Status,Created,Desc,Points
+UAV-1423,Design,Archie,MEDIUM,COMPLETE,23/7/2019,Where the incident involves search and rescue on the river  boundaries shall be automatically marked along the river banks.,2
+UAV-1413,Design,Evelyn,HIGH,COMPLETE,20/11/2019,Dynamically check NOTAMs prior to flight to identify any temporary flight restrictions,1
+UAV-1412,Design,Unassigned,LOW,BACKLOG,10/12/2019,Use the LAANC system to check for FAA airspace class prior to flight and establish altitude limits accordingly,3
+UAV-1411,Story,Archie,LOW,IN PROGRESS,12/12/2019,As an Incident commander I want a geofence to be automatically generated around the response area.,5
+UAV-1410,Design,Unassigned,HIGH,BACKLOG,27/12/2019,When an operator has a finite set of decisions to be made in a time-sensitive manner  display those options in a prominent place on the screen.,2
+UAV-1409,Design,Evelyn,LOW,SCHEDULED,28/11/2019,When an operator needs to make a critical decision  issue an alert.,8
+UAV-1407,Story,Archie,HIGH,REVIEW,16/11/2019,As a Drone Commander  I want to be fully aware of any mission-critical  drone-related decisions that are awaiting my input and the options I have available to me.,3
+UAV-1406,Hazard,Unassigned,HIGH,BACKLOG,28/11/2019,The system fails to clearly notify the operator of critical decisions that they need to make and as a result the success of the mission is impeded. ,2
+UAV-1405,Story,Evelyn,HIGH,ICE BOX,8/12/2019,As a Drone Commander  I want to make mission-critical decisions that guide the behavior of the drones.,3
+UAV-1404,Design,Archie,MEDIUM,COMPLETE,23/11/2019,When more than one video stream of potential victims are detected  create tabs labeled with probabilities  to allow the operator to check out an alternate video stream.,1
+UAV-1403,Design,Unassigned,MEDIUM,SCHEDULED,9/12/2019,When a victim is reported as detected  and no other video stream is currently displaying a candidate victim  then display the annotated video stream over the entire map.  The annotated video stream must include: A bounding box depicting the victim and a confidence score representing the probability that the object detected is a human victim.,2
+UAV-1402,Design,Smita,HIGH,IN PROGRESS,19/11/2019,Create colored borders around video stream displays that match the color assigned to the drone producing the video.,1
+UAV-1401,Story,Alberto,LOW,REVIEW,24/11/2019,As a drone  I will detect victims and stream annotated video to DroneResponse,8
+UAV-1400,Story,Archie,MEDIUM,IN PROGRESS,13/12/2019,As a drone commander  when a UAV detects a potential victim  I want that video stream to be prominently displayed on the screen.,1
+UAV-1399,Story,Unassigned,HIGH,BACKLOG,25/11/2019,As a Drone Commander I want to view thumbnail video streams for all UAVs.,8
+UAV-1398,Story,Archie,LOW,ICE BOX,24/12/2019,As a Drone Commander I want video streams to be color coordinated with the unique color assigned to each drone.,3
+UAV-1397,Story,Evelyn,LOW,ICE BOX,14/11/2019,As a Drone Commander viewing video stream during an emergency incident  I want to know which UAV is streaming the video.,3
+UAV-1396,Design,Smita,MEDIUM,SCHEDULED,3/12/2019,Dronology shall report all mechanical faults for registered UAVs to DroneResponse,2
+UAV-1395,Design,Evelyn,MEDIUM,COMPLETE,16/11/2019,Provide an API for receiving failure alerts from registered UAVs,1
+UAV-1394,Design,Unassigned,HIGH,BACKLOG,24/12/2019,Detect onboard mechanical  electrical  and other system errors on the UAV,2
+UAV-1393,Story,Smita,MEDIUM,COMPLETE,26/11/2019,As a drone  I want to detect all system-level faults and notify the DroneResponse system,3
+UAV-1392,Design,Smita,MEDIUM,ICE BOX,19/12/2019,Raise specific warnings for UAV related faults including: Unhealthy compass Unhealthy barometer GSP gliche Compasses inconsistent Gyros not healthy High GPS HDOP,1
+UAV-1391,Story,Alberto,LOW,ICE BOX,22/12/2019,As a drone flight technician I want warnings to be displayed on the UI to alert me to any UAV related faults.,3
+UAV-1390,Story,Archie,MEDIUM,COMPLETE,27/12/2019,As a drone flight technician I want to be notified of any mechanical or technical problems associated with an active drone ,8
+UAV-1389,Design,Smita,LOW,REVIEW,12/11/2019,When flying autonomously UAV shall avoid prohibited airspace.,2
+UAV-1388,Design,Unassigned,MEDIUM,BACKLOG,9/11/2019,Model prohibited airspace as 3-dimensional space and provide an API for checking whether GPS coordinates are inside the space.,3
+UAV-1387,Story,Unassigned,MEDIUM,SCHEDULED,29/12/2019,As a drone  when making autonomous flying decisions  I need prohibited airspace to be represented in a format that I can interpret  so that I can avoid flying into prohibited airspace.,1
+UAV-1386,Story,Smita,MEDIUM,ICE BOX,1/12/2019,As a drone  when I'm making autonomous flying decisions  I want to avoid flying into prohibited airspace.,1
+UAV-1385,Design,Unassigned,HIGH,BACKLOG,9/11/2019,If a search area infringes on prohibited airspace  the system shall issue a warning.,2
+UAV-1384,Story,Alberto,MEDIUM,ICE BOX,8/12/2019,As a compliance officer  I want all controlled airspace at normally acceptable flying altitudes to be clearly marked on the map.,3
+UAV-1383,Story,Archie,LOW,REVIEW,12/11/2019,As a compliance officer I want to make sure that UAVs do not fly into prohibited airspace,8
+UAV-1382,Story,Unassigned,MEDIUM,BACKLOG,17/12/2019,As a drone operator  I want to be able to request and view the current flight plan of one or more UAVs in flight.,8
+UAV-1381,Story,Unassigned,LOW,BACKLOG,15/12/2019,As a DroneResponse operator I want to be able to track UAVs in flight.,3
+UAV-1380,Story,Smita,LOW,ICE BOX,16/11/2019,As a Drone Operator  I want the current position of all UAVs on the map to be displayed over the map.,1
+UAV-1368,Design,Evelyn,HIGH,SCHEDULED,23/12/2019,The currently assigned flight route for each UAV shall be displayed on the DroneResponse map.,1
+UAV-1366,Hazard,Unassigned,HIGH,BACKLOG,14/12/2019,The source of a video stream is not clearly depicted in the UI and the operator is confused about the source of the video and unable to make an informed rescue decision.,
+UAV-1365,Hazard,Smita,HIGH,IN PROGRESS,25/12/2019,The system fails to detect and raise warnings for mechnical or other technical faults on an active UAV,
+UAV-1364,Hazard,Archie,MEDIUM,ICE BOX,26/12/2019,Prohibited airspace is not clearly identified,
+UAV-1363,Design,Evelyn,LOW,COMPLETE,19/12/2019,Display basic status information such as altitude  velocity  and battery power for each UAV at all times,3
+UAV-1362,Design,Smita,MEDIUM,COMPLETE,28/12/2019,Display the current location of each UAV on the DroneResponse map.,5
+UAV-1355,Design,Archie,LOW,IN PROGRESS,4/12/2019,Allow the Drone Commander to mark the area on the map (Using appropriate icons) to represent elements such as fire  hazards  trucks etc.,1
+UAV-1353,Design,Unassigned,HIGH,BACKLOG,24/12/2019,A DroneResponse user shall mark a search area by drawing a polygon on the map.,1
+UAV-1325,Design,Smita,MEDIUM,IN PROGRESS,24/11/2019,When requested by the DroneResponse operator  retrieve the flight route of each drone and display it on the map.,2
+UAV-1300,Design,Archie,LOW,COMPLETE,2/12/2019,Layout the DroneResponse UI using the Nebular framework,3
+UAV-1289,Design,Smita,HIGH,COMPLETE,26/11/2019,Display video stream of all UAVs as a thumbnail view located next to each UAV in the display panel.,5
+UAV-1233,Design,Alberto,MEDIUM,COMPLETE,20/12/2019,The video capabilities of each UAV shall be displayed clearly in the UI,2
+UAV-1231,Design,Unassigned,MEDIUM,SCHEDULED,3/12/2019,Add Angular services to fetch data Dronology API ,1
+UAV-1195,Hazard,Unassigned,LOW,BACKLOG,23/11/2019,The drone commander loses track of drones in the air during an incident thereby failing to comply with FAA regulations and potentially causing an accident due to an unattended drone.,4
+UAV-1194,Design,Smita,HIGH,IN PROGRESS,12/12/2019,When a drone moves on the map it shall leave a trail representing the coordinates of the most recent [tail_size] seconds of flight.,5
+UAV-1192,Design,Archie,MEDIUM,ICE BOX,20/12/2019,DroneResponse establishes a connection to Dronology and receives status updates for each UAV.,3
+UAV-1162,Design,Smita,MEDIUM,COMPLETE,12/11/2019,Dronology should use the API layer to expose monitoring data to DroneResponse and any 3rd party applications,3
+UAV-1143,Hazard,Smita,HIGH,ICE BOX,7/12/2019,UI fails to provide situational awareness,
+UAV-1142,Hazard,Unassigned,LOW,BACKLOG,10/11/2019,DroneResponse app crashes due to hardware failure,
