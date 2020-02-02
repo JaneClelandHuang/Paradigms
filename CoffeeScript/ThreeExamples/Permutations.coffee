@@ -1,5 +1,5 @@
 # Example 2: Generate Permutations
-generatePermutations  = (a, n) ->
+generatePermutations = (a, n) ->
     if n is 0
         console.log "Hello"
         console.log a.join ''
