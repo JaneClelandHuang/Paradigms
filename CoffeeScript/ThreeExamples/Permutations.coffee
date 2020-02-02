@@ -6,7 +6,7 @@ generatePermutations  = (a, n) ->
         for i in [0...n]
 		    generatePermuations a, n-1
             j = if n % 2 is 0 then 0 else i
-            [a[j], a[n], = [a[n], a[j]]
+            [a[j], a[n]] = [a[n], a[j]]
             generatePermutations a, n-1
 
 if process.argv.length isnt 3
