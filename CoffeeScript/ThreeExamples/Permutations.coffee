@@ -4,7 +4,7 @@ generatePermutations  = (a, n) ->
         console.log a.join ''
     else
         for i in [0...n]
-		    generatePermuations a, n-1
+            generatePermuations a, n-1
             j = if n % 2 is 0 then 0 else i
             [a[j], a[n]] = [a[n], a[j]]
             generatePermutations a, n-1
