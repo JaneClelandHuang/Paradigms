@@ -1,3 +1,4 @@
+# Example 2: Generate Permutations
 generatePermutations  = (a, n) ->
     if n is 0
         console.log a.join ' '
