@@ -13,4 +13,4 @@ if process.argv.length isnt 3
     console.error 'Exactly one argument is required'
     process.exit 1
 word = process.argv[2]
-generatePermutations word.split(' ', word.length-1
+generatePermutations word.split(' ', word.length-1)
