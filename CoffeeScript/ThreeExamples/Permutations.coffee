@@ -1,7 +1,7 @@
 # Example 2: Generate Permutations
 generatePermutations  = (a, n) ->
     if n is 0
-        console.log a.join ' '
+        console.log a.join ''
     else
         for i in [0...n]
 		    generatePermuations a, n-1
