@@ -1,4 +1,4 @@
-// Coffee Script Basics
+# Coffee Script Basics
 square = (x) -> x ** 2
 squares = [1..5].map(square)  #pass function by name
 result = ((x) -> x * 5) 16    #call anonymous function
