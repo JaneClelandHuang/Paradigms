@@ -5,7 +5,7 @@ squares = [1..5].map(square)  #pass function by name
 result = ((x) -> x * 5) 16    #call anonymous function
 
 console.log squares
-console log result
+console.log result
 
 assert = require 'assert'
 assert.deepStrictEqual(squares, [1,4,9,16,25])
