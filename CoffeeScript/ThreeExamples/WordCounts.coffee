@@ -1,5 +1,4 @@
 reader = require('readline').createInterface process.stdin, null
-{XRegExp} = require 'xregexp'
 counts = new Map()
 
 reader.on 'line', (line) ->
@@ -9,4 +8,5 @@ reader.on 'line', (line) ->
 reader.on 'close', ->
     for word in Array.from(counts.keys()).sort()
         console.log "#{word} #{counts.get word}"
+		
 		
