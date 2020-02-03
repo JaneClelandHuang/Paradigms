@@ -3,7 +3,7 @@ reader = require('readline').createInterface process.stdin, null
 counts = new Map()
 
 reader.on 'line', (line) ->
-    wordPattern = XRegExp("[\\p{L}']+", 'g')
+    wordPattern = ([\\p{L}']+", 'g')
     for word in (line.toLowerCase().match(wordPattern) or [])
         counts.set word, (counts.get(word) or 0) + 1
 	
