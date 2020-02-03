@@ -1,6 +1,6 @@
 # Example 2: Generate Permutations
 generatePermutations = (a, n) ->
-	console.log(a," ",n)
+    console.log(a," ",n)
     if n is 0
         console.log a.join ''
     else
