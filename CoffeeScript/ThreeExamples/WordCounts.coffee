@@ -3,8 +3,7 @@ reader = require('readline').createInterface process.stdin, null
 counts = new Map()
 
 reader.on 'line', (line) ->
-    wordPattern = ("[\\p{L}']+", 'g')
-    for word in (line.toLowerCase().match(wordPattern) or [])
+    for word in (line.toLowerCase().match(/[a-z']+/g) or [])
         counts.set word, (counts.get(word) or 0) + 1
 	
 reader.on 'close', ->
