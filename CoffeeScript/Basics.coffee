@@ -18,4 +18,4 @@ console.log f(2)	#2+1+0=2
 assert f(2) is 2
 
 console.log f(3,5)	#3+5+0=15
-assert f(3,5) is 17
+assert f(3,5) is 15
