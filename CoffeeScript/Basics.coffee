@@ -19,3 +19,24 @@ assert f(2) is 2
 
 console.log f(3,5)	#3+5+0=15
 assert f(3,5) is 15
+
+# Example 3
+circle =
+    radius: 10,
+    area: -> Math.PI * @radius * @radius
+    circumference: -> 2 * Math.PI * @radius
+	
+assert = require 'assert'
+assert circle.area() is 100 * Math.PI
+assert circle.circumference() is 20 * Math.PI
+
+# Example 4
+person =
+    name: 'Alice'
+    tryToSayHelloButFail: (delay) ->
+        setTimeout (() -> console.log "Hi from #{@name} :("), delay
+    sayHello: (delay) ->
+        setTimeout (() => console.log "Hi from #{@name} :),delay
+
+person.tryToSayHelloButFail 1000 # Hi from undefined :(
+person.sayHello 1000 #Hi from Alice :)
