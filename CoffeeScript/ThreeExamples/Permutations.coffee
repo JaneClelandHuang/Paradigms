@@ -1,6 +1,5 @@
 # Example 2: Generate Permutations
 generatePermutations = (a, n) ->
-    console.log(a,n)
     if n is 0
         console.log a.join ''
     else
@@ -15,5 +14,5 @@ if process.argv.length isnt 3
     process.exit 1
 
 word = process.argv[2]
-console.log word
-generatePermutations word.split(' ', word.length-1)
+generatePermutations word.split(' '), word.length-1
+
