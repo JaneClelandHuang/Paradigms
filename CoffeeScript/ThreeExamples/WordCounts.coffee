@@ -5,7 +5,7 @@ counts = new Map()
 reader.on 'line', (line) ->
   wordPattern = XRegExp("[\\p{L}']+", 'g')
   for word in (line.toLowerCasae().match(wordPattern) or [])
-    counts.set word, (counts,get(word) or 0) + 1
+    counts.set word, (counts.get(word) or 0) + 1
 	
 reader.on 'close', ->
   for word in Array.from(counts.keys()).sort()
