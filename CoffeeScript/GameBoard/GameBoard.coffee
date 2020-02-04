@@ -4,9 +4,6 @@ class GameBoard
 
     grid1: (0 for [1..@dimension])
 	grid2: (0 for [1..@dimension])
- 
-    board: [@grid1,@grid2]
-
     xgrid: (0 for [1..100])
 	
         
