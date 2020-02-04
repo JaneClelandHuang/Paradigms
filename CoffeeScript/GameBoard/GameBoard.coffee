@@ -16,8 +16,8 @@ class GameBoard
     ]
 	
     drawGrid: => 
-        
-        for cell,i in grid
+        console.log "Drawing it now"       
+        for cell,i in @grid
 	        console.log "Position" + i + grid i
         
 gameboard = new GameBoard 10
