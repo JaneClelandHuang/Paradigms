@@ -4,10 +4,10 @@
 alerters = [];
 
 for i in ['foo', 'bar', 'baz']
-  alerters.push 
+    alerters.push 
     -> alert(i)
 
 for alerter in alerters
-  alerter()
+    alerter()
  
  
