@@ -15,7 +15,7 @@ class GameBoard
         0,0,0,0,0,0,0,0,0,0
     ]
 
-    xgrid: [1..10][1..10]
+    xgrid: (0 for [1..100])
        
 	
     drawGrid: => 
@@ -28,6 +28,7 @@ console.log "hello"
 console.log gameboard.grid.length
 gameboard.drawGrid
 console.log gameboard.grid
+console.log gameboard.xgrid
 
 	
 
