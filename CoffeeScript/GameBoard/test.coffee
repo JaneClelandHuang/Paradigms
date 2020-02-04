@@ -7,4 +7,4 @@ class GameBoard = [
 gameboard = new GameBoard
 gameboard.setMarker(4,4,X)
 
-console.log spaces
+console.log gameboard.spaces
