@@ -4,7 +4,8 @@ class GameBoard
 
     grid1: (0 for [1..10])
     grid2: (0 for [1..10])
-    xgrid: (0 for [1..100])
+    xgrid: [@grid1,@grid1]
+	
 	
         
 gameboard = new GameBoard 10
