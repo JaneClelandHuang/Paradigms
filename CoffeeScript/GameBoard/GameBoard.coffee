@@ -20,6 +20,8 @@ class GameBoard
 	        console.log i
         
 gameboard = new GameBoard(10)
+console.log "hello"
+console.log grid.length
 gameboard.drawGrid
 	
 
