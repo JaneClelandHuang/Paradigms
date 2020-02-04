@@ -3,10 +3,10 @@ class GameBoard
         y = [1,1,1,1,1,1,1,1]
 
     setMarker: (x, y, m) => 
-	@spaces[x][y] = m
+	    spaces[x][y] = m
 	
     display: -> 
-	console.log @spaces
+	    console.log @spaces
 	
 gameboard = new GameBoard
 gameboard.setMarker(4,4,3)
