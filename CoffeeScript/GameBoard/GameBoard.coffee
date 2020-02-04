@@ -7,7 +7,7 @@ class GameBoard
 	    new Elements.Space(x, y)
         #grid(x, y) = "0"
 
-gameboard = new GameBoard
+gameboard = new GameBoard(10)
 gameboard.grid
 	
 
