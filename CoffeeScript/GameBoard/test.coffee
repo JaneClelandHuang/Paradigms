@@ -1,5 +1,4 @@
-spaces = for x in [0...20]
-  for y in [0...20]
-    new Elements.Space(x, y)
+spaces = for x in [0...10]
+  row = [1,1,1,1]
 	
-spaces.forEvery console.log i 
+console.log spaces
