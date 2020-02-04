@@ -4,7 +4,7 @@ class GameBoard
 
     @grid1: [0 for [0..10]]
     @grid2: [0 for [0..10]]
-    @xgrid: [@grid1,@grid1]
+    @xgrid: [[0 for [0..10]],[0 for [0..10]]]
 	
     displayBoard: -> 
     console.log "Current Grid"
