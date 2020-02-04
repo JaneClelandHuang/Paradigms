@@ -1,9 +1,10 @@
-spaces = for x in [0...10]
-    y = [1,1,1,1,1,1,1,1]
-  
-spaces[3][1] = '9'
+class GameBoard = [
+    spaces = for x in [0...10]
+        y = [1,1,1,1,1,1,1,1]
+
+    setMarker: (x, y, m) => spaces[x][y] = m
 	
-console.log spaces[3][1]
-console.log spaces[4][4]
+gameboard = new GameBoard
+gameboard.setMarker(4,4,X)
 
 console.log spaces
