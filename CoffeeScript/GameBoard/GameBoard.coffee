@@ -6,7 +6,6 @@ class GameBoard
     grid2: [0 for [1..10]]
     xgrid: [@_grid1,@_grid1]
 	
-	GameBoard.prototype.getGrid = function() 
     displayBoard: => 
     console.log "Hello"
     console.log(@_grid1)
