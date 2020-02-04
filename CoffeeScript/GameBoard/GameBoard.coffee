@@ -8,9 +8,9 @@ class GameBoard
 	
     displayBoard: => 
     console.log "Hello"
-    console.log(grid1)
-    console.log(grid2)
-	console.log(xgrid)
+    console.log(@grid1)
+    console.log(@grid2)
+	console.log(@xgrid)
 		       
 gameBoard = new GameBoard 10
 console.log GameBoard.displayBoard
