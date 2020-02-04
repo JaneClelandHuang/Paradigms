@@ -23,7 +23,7 @@ assert [5,3,9,4,6].indexOf(3) is 1
 assert.throws((-> null.toString()), TypeError)
 assert.throws((->undefined.toString()), TypeError)
 
-assert 78.8 is true
+assert 78.8? is true
 assert false? is true
 assert []? is true
 assert undefined? is false
