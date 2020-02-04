@@ -2,7 +2,7 @@ class GameBoard
     constructor: (dimension) ->
         @dimension = dimension
 
-    @grid = [
+    grid: [
         0,0,0,0,0,0,0,0,0,0
         0,0,0,0,0,0,0,0,0,0
         0,0,0,0,0,0,0,0,0,0
@@ -15,11 +15,11 @@ class GameBoard
         0,0,0,0,0,0,0,0,0,0
     ]
 	
-    @drawGrid = -> 
+    drawGrid: => 
         for i in grid
 	        console.log i
         
-gameboard = new GameBoard(10)
+gameboard = new GameBoard 10
 console.log "hello"
 console.log gameboard.grid.length
 gameboard.drawGrid
