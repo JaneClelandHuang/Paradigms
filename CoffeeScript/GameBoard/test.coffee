@@ -7,7 +7,7 @@ class GameBoard
     display: => console.log spaces
 	
 gameboard = new GameBoard
-gameboard.setMarker(4,4,X)
+gameboard.setMarker(4,4,3)
 gameboard.display
 
 #console.log gameboard.spaces
