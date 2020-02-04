@@ -17,7 +17,7 @@ class GameBoard
 	
     drawGrid: => 
         for i in grid
-	        console.log i
+	        console.log grid i
         
 gameboard = new GameBoard 10
 console.log "hello"
