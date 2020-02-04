@@ -2,7 +2,7 @@ gameboard =
     spaces = for x in [0...10]
         y = [0,0,0,0,0,0,0,0,0,0]
 
-    setMarker: (x, y, m) => 
+    setMarker: (x, y, m) =>
 	    spaces[x][y] = m
 	
     display: => 
