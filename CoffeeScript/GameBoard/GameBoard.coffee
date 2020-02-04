@@ -2,8 +2,8 @@ class GameBoard
     constructor: (dimension) ->
         @dimension = dimension
 
-    grid1: (0 for [1..@dimension])
-	grid2: (0 for [1..@dimension])
+    grid1: (0 for [1..10])
+	grid2: (0 for [1..10])
     xgrid: (0 for [1..100])
 	
         
