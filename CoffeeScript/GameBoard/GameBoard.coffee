@@ -19,7 +19,7 @@ class GameBoard
 	
 	#x2grid: ([i, 1] for i in [1])[[ 1, 1 ]]
     
-	myArray: {{[0 for [1..10]},{[0 for [1..10]}}
+	myArray: {{0 for [1..10]},{0 for [1..10]}}
 	
 	
     drawGrid: => 
