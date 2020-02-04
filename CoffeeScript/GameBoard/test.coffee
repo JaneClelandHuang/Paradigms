@@ -5,7 +5,7 @@ class GameBoard
     setMarker: (x, y, m) => 
 	spaces[x][y] = m
 	
-    display: => 
+    display: -> 
 	console.log @spaces
 	
 gameboard = new GameBoard
