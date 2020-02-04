@@ -13,7 +13,6 @@ class GameBoard
 	console.log(xgrid)
 		       
 gameBoard = new GameBoard 10
-console.log gameBoard.dimension
 console.log GameBoard.displayBoard
 
 	
