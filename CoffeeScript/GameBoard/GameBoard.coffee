@@ -8,7 +8,7 @@ class GameBoard
 	
     displayBoard: -> 
     console.log "Hello"
-    console.log(@grid1)
+    console.log "Grid 1" + @grid1
     console.log(@grid2)
 	console.log(@xgrid)
 		       
