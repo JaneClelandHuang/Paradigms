@@ -3,11 +3,9 @@
 # How would you fix it? 
 alerters = [];
 
-
-
 for i in ['foo', 'bar', 'baz']
     alerters.push 
-    -> console.log(i)
+        -> alert(i)
 
 for alerter in alerters
     alerter()
