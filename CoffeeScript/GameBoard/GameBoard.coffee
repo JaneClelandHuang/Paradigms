@@ -17,8 +17,7 @@ class GameBoard
 
     xgrid: (0 for [1..100])
 	
-	x2grid: ([i, 1] for i in [1])
-        #[ [ 1, 1 ] ]
+	x2grid: ([i, 1] for i in [1])[ [ 1, 1 ] ]
        
 	
     drawGrid: => 
