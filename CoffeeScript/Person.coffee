@@ -1,6 +1,7 @@
 gameboard =
     spaces = for x in [0...10]
-        y = [0,0,0,0,0,0,0,0,0,0]
+        y = [0,0,0,0,0,0,0,0]
+
     name: 'Alice'
     tryToSayHelloButFail: (delay) ->
         setTimeout (() -> console.log "Hi from #{@name} :("), delay
