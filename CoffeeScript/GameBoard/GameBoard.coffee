@@ -6,7 +6,7 @@ class GameBoard
     @_grid2: (0 for [1..10])
     @_xgrid: [@_grid1,@_grid1]
 	
-	@displayBoard: => 
+    @displayBoard: => 
         console.log "Hello"
         console.log(@_grid1)
         console.log(@_grid2)
