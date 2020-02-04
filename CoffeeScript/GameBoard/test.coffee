@@ -1,4 +1,4 @@
 spaces = for x in [0...10]
-  row = [1,1,1,1]
+  y = [1,1,1,1]
 	
-console.log spaces
+console.log spaces[2][2]
