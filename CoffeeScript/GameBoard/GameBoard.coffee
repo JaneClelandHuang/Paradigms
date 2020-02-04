@@ -19,7 +19,7 @@ class GameBoard
 	
 	#x2grid: ([i, 1] for i in [1])[[ 1, 1 ]]
     
-	myArray: {0 for [1..10],0 for [1..10]}
+	myArray: {"top-level": {"first_array": ["y1","y2","y3"], "second_array": ["y1","y2","y3"]}}({x: xi, y: yi} for yi,xi in ar for name,ar of obj['top-level'] )
 	
 	
     drawGrid: => 
