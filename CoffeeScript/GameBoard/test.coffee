@@ -3,4 +3,4 @@ spaces = for x in [0...10]
   
 spaces[3][1] = '9'
 	
-console.log spaces[2][2]
+console.log spaces[3][1]
