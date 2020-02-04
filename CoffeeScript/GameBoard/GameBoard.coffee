@@ -1,6 +1,6 @@
 class GameBoard
     constructor: (dimension) ->
-    @dimension = dimension
+        @dimension = dimension
 
     grid1: [0 for [1..10]]
     grid2: [0 for [1..10]]
@@ -13,6 +13,7 @@ class GameBoard
 		
         
 gameBoard = new Gameboard 10
+console.log gameBoard.dimension
 console.log GameBoard.displayBoard
 
 	
