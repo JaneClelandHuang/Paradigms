@@ -5,7 +5,7 @@ class GameBoard
     grid1: [0,0,0,0,0,0,0,0,0,0]
 	grid2: [0,0,0,0,0,0,0,0,0,0]
  
-    board: [grid1,grid2]
+    board: [@grid1,@grid2]
 
     xgrid: (0 for [1..100])
 	
