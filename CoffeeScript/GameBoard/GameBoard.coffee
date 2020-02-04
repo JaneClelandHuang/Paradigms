@@ -2,38 +2,23 @@ class GameBoard
     constructor: (dimension) ->
         @dimension = dimension
 
-    grid: [
-        0,0,0,0,0,0,0,0,0,0
-        0,0,0,0,0,0,0,0,0,0
-        0,0,0,0,0,0,0,0,0,0
-        0,0,0,0,0,0,0,0,0,0
-        0,0,0,0,0,0,0,0,0,0
-        0,0,0,0,0,0,0,0,0,0
-        0,0,0,0,0,0,0,0,0,0
-        0,0,0,0,0,0,0,0,0,0
-        0,0,0,0,0,0,0,0,0,0
-        0,0,0,0,0,0,0,0,0,0
-    ]
+    grid1: [0,0,0,0,0,0,0,0,0,0]
+	grid2: [0,0,0,0,0,0,0,0,0,0]
+ 
+    board: [grid1,grid2]
 
     xgrid: (0 for [1..100])
 	
-	#x2grid: ([i, 1] for i in [1])[[ 1, 1 ]]
-    
-	myArray: {"top-level": {"first_array": ["y1","y2","y3"], "second_array": ["y1","y2","y3"]}}({x: xi, y: yi} for yi,xi in ar for name,ar of obj["top-level"] )
-	
-	
     drawGrid: => 
         console.log "Drawing it now"       
-        for cell,i in @grid
+        for cell,i in @grid1
 	        console.log "Position" + i + grid i
         
 gameboard = new GameBoard 10
 console.log "hello"
-console.log gameboard.grid.length
-gameboard.drawGrid
-console.log gameboard.grid
-console.log gameboard.xgrid
-console.log gameboard.myArray
+console.log grid1
+console.log grid2
+console.log xgrid
 
 
 	
