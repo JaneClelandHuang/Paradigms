@@ -14,6 +14,9 @@ class GameBoard
         0,0,0,0,0,0,0,0,0,0
         0,0,0,0,0,0,0,0,0,0
     ]
+
+    xgrid: [1..10][1..10]
+       
 	
     drawGrid: => 
         console.log "Drawing it now"       
