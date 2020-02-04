@@ -10,9 +10,8 @@ class GameBoard
     console.log "Hello"
     console.log(@_grid1)
     console.log(@_grid2)
-		
-        
-gameBoard = new Gameboard 10
+		       
+gameBoard = new GameBoard 10
 console.log gameBoard.dimension
 console.log GameBoard.displayBoard
 
