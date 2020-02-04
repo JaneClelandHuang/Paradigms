@@ -21,7 +21,7 @@ class GameBoard
         
 gameboard = new GameBoard(10)
 console.log "hello"
-console.log grid.length
+console.log gameboard.grid.length
 gameboard.drawGrid
 	
 
