@@ -9,10 +9,6 @@ class GameBoard
 
     xgrid: (0 for [1..100])
 	
-    drawGrid: => 
-        console.log "Drawing it now"       
-        for cell,i in @grid1
-	        console.log "Position" + i + grid i
         
 gameboard = new GameBoard 10
 console.log "hello"
