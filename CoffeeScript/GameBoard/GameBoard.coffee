@@ -1,18 +1,19 @@
 class GameBoard
     constructor: (dimension) ->
-        @dimension = dimension
+    @dimension = dimension
 
-    @_grid1: [0 for [1..10]]
-    @_grid2: (0 for [1..10])
-    #@_xgrid: [@_grid1,@_grid1]
+    grid1: [0 for [1..10]]
+    grid2: [0 for [1..10]]
+    xgrid: [@_grid1,@_grid1]
 	
+	GameBoard.prototype.getGrid = function() 
     displayBoard: => 
-        console.log "Hello"
-        console.log(@_grid1)
-        console.log(@_grid2)
+    console.log "Hello"
+    console.log(@_grid1)
+    console.log(@_grid2)
 		
         
-GameBoard.displayBoard
+gameBoard = new Gameboard 10
 console.log GameBoard.displayBoard
 
 	
