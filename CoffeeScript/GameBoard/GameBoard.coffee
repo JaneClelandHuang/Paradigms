@@ -24,6 +24,8 @@ gameboard = new GameBoard 10
 console.log "hello"
 console.log gameboard.grid.length
 gameboard.drawGrid
+console.log gameboard.grid
+
 	
 
 		
