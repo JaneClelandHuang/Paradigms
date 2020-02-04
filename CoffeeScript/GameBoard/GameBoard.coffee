@@ -17,8 +17,9 @@ class GameBoard
 
     xgrid: (0 for [1..100])
 	
-	x2grid: ([i, 1] for i in [1])[ [ 1, 1 ] ]
-       
+	#x2grid: ([i, 1] for i in [1])[[ 1, 1 ]]
+    
+	myArray: {{[0 for [1..10],[0 for [1..10]}}
 	
     drawGrid: => 
         console.log "Drawing it now"       
@@ -31,7 +32,8 @@ console.log gameboard.grid.length
 gameboard.drawGrid
 console.log gameboard.grid
 console.log gameboard.xgrid
-console.log x2grid
+console.log gameboard.myArray
+
 
 	
 
