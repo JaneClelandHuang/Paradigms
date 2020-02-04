@@ -15,9 +15,10 @@ class GameBoard
         0,0,0,0,0,0,0,0,0,0
     ]
 	
-    drawGrid = ->
-        console.log(@grid)
-
+    drawGrid = -> 
+        for i in grid
+	        console.log i
+        
 gameboard = new GameBoard(10)
 gameboard.drawGrid
 	
