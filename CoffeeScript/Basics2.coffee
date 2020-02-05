@@ -32,6 +32,7 @@ x = 9;
 assert x? is true
 
 # Example 3:
+# A comprehension is an expression that produces an array.
 employees = [ 
     {name: 'alice', salary: 85000} 
     {name: 'bob', salary: 77500} 
@@ -41,7 +42,7 @@ employees = [
     {name: 'fahima', salary: 79999}] 
  
 assert = require 'assert' 
-highEarners = (e.name for e in employees when e.salary > 80000) 
+highEarners = (x.name for x in employees when x.salary > 80000) 
 shortNames = (e.name for e in employees when e.name.length < 4) 
 console.log("High earners: ", highEarners)
 console.log("Short names: ", shortNames)
