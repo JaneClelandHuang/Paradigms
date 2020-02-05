@@ -61,6 +61,8 @@ assert.deepStrictEqual shortNames, ['bob', 'chi']
 
 assert = require 'assert' 
 assert.deepStrictEqual [x, y, a, b, mountain, lat, lon], 
-    [20, 10, 5, 3, 'Everest', 27.9881, 86.9253] 
+    [20, 10, 5, 3, 'Everest', 27.9881, 86.9253]
+
+console.log(place)
 	
 
