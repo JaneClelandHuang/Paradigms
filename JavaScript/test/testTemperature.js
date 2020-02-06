@@ -1,4 +1,6 @@
-var assert = require('assert');
+let convert = require('app2.js');
+let assert = require('assert');
+
 describe('Temperature Conversion',function(){
 	describe('cToF',function(){
 		it('should convert -40 celsius to -40 fahrenheit', function() {
@@ -15,4 +17,6 @@ describe('Temperature Conversion',function(){
 		// tests here
 	});
 });
+
+
 		
