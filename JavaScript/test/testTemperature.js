@@ -1,4 +1,4 @@
-let convert = require('app2.js');
+let convert = require('../app2.js');
 let assert = require('assert');
 
 describe('Temperature Conversion',function(){
