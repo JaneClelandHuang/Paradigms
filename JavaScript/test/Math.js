@@ -6,5 +6,4 @@ describe('Math', function() {
 	it('should return -8 when..',function() {
 	  assert.equal((3-4)*8,-8);
 	});
-  });
 });
