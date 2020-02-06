@@ -1,3 +1,9 @@
-"scripts": {
-  "test": "mocha"
+/* package.json */
+
+{
+  "scripts": {
+    "test": "mocha"
+  }
 }
+
+
