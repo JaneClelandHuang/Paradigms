@@ -31,7 +31,7 @@ let pilots = [
 ];
 
 // Return average pilots age
-function getAveragePilotAge(){
+employees.getAveragePilotAge = function(){
 	let total = 0;
 	let count = 0;
 	for (let i = 1; i < pilots.length; i++) {
@@ -41,13 +41,13 @@ function getAveragePilotAge(){
 	return total/count;
 }
 
-function hasPilotNamed(name){
+employees.hasPilotNamed = function(name){
 	return hasPilot = pilots.filter(x=>x.name.includes(name)).length>=2;
 }
 
 // Everyone earning greater or equal to $45 per hour gets a bonus of $1000, 
 // all others get $800
-function computeBonusTotal(){
+employees.computeBonusTotal = function(){
 	for (key in pilots){
 		total += key.id>45 ? 1000 : 800
 	}
