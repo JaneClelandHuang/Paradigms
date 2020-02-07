@@ -54,9 +54,9 @@ employees.computeBonusTotal = function(){
 	return total;
 }
 
-total = getAveragePilotAge();	
+total = employees.getAveragePilotAge();	
 console.log(total);
-console.log(hasPilotNamed("Lintra"));
-console.log(computeBonusTotal());
+console.log(employees.hasPilotNamed("Lintra"));
+console.log(employees.computeBonusTotal());
 
 module.exports = employees;
