@@ -1,4 +1,4 @@
-let convert = require('./pilots2.js');
+let employees = require('./pilots2.js');
 let assert = require('assert');
 
 describe('Pilots Employees',function(){
