@@ -8,9 +8,7 @@ assert type(9 + 5j) == complex
 assert type((8, 'dog', False)) == tuple 
 assert type('hello') == str 
 assert type(b'hello') == bytes 
-assert type([1, '', False]) == list 
-print(type(range,1,10))
-
+assert type([1, '', False]) == list print(type(range,1,10))
 #assert type(range(1,10)) == range 
 assert type({1, 2, 3}) == set 
 assert type(frozenset([1, 2, 3])) == frozenset 
@@ -20,7 +18,7 @@ assert type(slice([1, 2, 3])) == slice
 # Built-in vs. User-defined functions 
 def plus_two(x): 
     return x + 2 
-assert str(type(plus_two)) == "" 
+#assert str(type(plus_two)) == "" 
 assert str(type(max)) == "" 
 
 # Even modules are types! 
