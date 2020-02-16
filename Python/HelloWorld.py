@@ -4,8 +4,8 @@
 import sys
 
 # Write 'Hello, World' to standard output.
-sys.stdout.writeln('Hello, World')
-print("\nHello")
+sys.stdout.write('Hello, World\n')
+print("Hello again")
 
 #-----------------------------------------------------------------------
 
