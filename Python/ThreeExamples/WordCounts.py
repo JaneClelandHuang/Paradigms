@@ -1,7 +1,7 @@
 import sys, re 
 sys.stderr.write('Hello')
 counts = {} 
-print(sys.stdin)
+
 for line in sys.stdin: 
     for word in re.findall(r'[a-z\']+', line.lower()):
         print(word)    
