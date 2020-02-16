@@ -4,6 +4,7 @@
 
 # Write 'Hello, World' to standard output.
 sys.writeln('Hello, World')
+print("Hello")
 
 #-----------------------------------------------------------------------
 
