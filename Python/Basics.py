@@ -35,7 +35,7 @@ assert type(list) == type
 assert type(type) == type # Interesting...or obvious?
 
 # Example 3
- import math 
+import math 
  
 class Circle: 
     def __init__(self, radius): 
