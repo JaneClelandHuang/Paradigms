@@ -9,6 +9,8 @@ assert type((8, 'dog', False)) == tuple
 assert type('hello') == str 
 assert type(b'hello') == bytes 
 assert type([1, '', False]) == list 
+print(type(range,1,10))
+
 #assert type(range(1,10)) == range 
 assert type({1, 2, 3}) == set 
 assert type(frozenset([1, 2, 3])) == frozenset 
