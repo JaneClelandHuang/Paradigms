@@ -4,7 +4,7 @@
 import sys
 
 # Write 'Hello, World' to standard output.
-sys.writeln('Hello, World')
+sys.stdout.write('Hello, World')
 print("Hello")
 
 #-----------------------------------------------------------------------
