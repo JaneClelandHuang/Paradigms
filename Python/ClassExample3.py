@@ -1,5 +1,5 @@
 # self represents the instance of the class. 
-# By using the “self” keyword we can access the attributes and methods of the class.
+# By using the `self' keyword we can access the attributes and methods of the class.
 # It binds the attributes with the given arguments.
 
 class car(): 
