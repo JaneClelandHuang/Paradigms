@@ -5,6 +5,11 @@ canvas.pack()
 canvas.create_oval(50, 50, 100, 100, fill="red")
 
 class MouseMover():
+
+    self.rectangle = self.canvas.create_rectangle( 
+        5, 5, 25, 25, fill = "black") 
+    self.canvas.pack() 
+	
     def __init__(self):
         self.item = 0;
         self.previous = (0, 0)
