@@ -1,4 +1,4 @@
-from tkinter import *
+import tkinter as tk 
 
 class Application(Frame):
     def say_hi(self):
