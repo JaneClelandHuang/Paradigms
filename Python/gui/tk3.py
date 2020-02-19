@@ -13,7 +13,7 @@ class App(root):
         frame.bind("<Enter>", self.print_event) 
         frame.bind("<Leave>", self.print_event) 
         fred = Button(self, fg = "red", bg = "blue")
-		frame.bind(fred)
+        frame.bind(fred)
         frame.pack(padx=50, pady=50) 
 
  
