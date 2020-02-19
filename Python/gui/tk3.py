@@ -1,31 +1,26 @@
 import tkinter as tk 
 root = tk.Tk
 
-class Application(root):
-    def say_hi(self):
-        print("hi there, everyone!")
+class App(root): 
+    def __init__(self): 
+        super().__init__() 
+        frame = tk.Frame(self, bg="green", 
+                         height=100, width=100) 
+        frame.bind("<Button-1>", self.print_event) 
+        frame.bind("<Double-Button-1>", self.print_event) 
+        frame.bind("<ButtonRelease-1>", self.print_event) 
+        frame.bind("<B1-Motion>", self.print_event) 
+        frame.bind("<Enter>", self.print_event) 
+        frame.bind("<Leave>", self.print_event) 
+        fred = Button(self, fg = "red", bg = "blue")
+		frame.bind(fred)
+        frame.pack(padx=50, pady=50) 
 
-    def createWidgets(self):
-        self.QUIT = Button(self)
-        self.QUIT["text"] = "QUIT"
-        self.QUIT["fg"]   = "red"
-        self.QUIT["command"] =  self.quit
+ 
+    def print_event(self, event): 
+        position = "(x={}, y={})".format(event.x, event.y) 
+        print(event.type, "event", position) 
 
-        self.QUIT.pack({"side": "left"})
-
-        self.hi_there = Button(self)
-        self.hi_there["text"] = "Hello",
-        self.hi_there["command"] = self.say_hi
-
-        self.hi_there.pack({"side": "left"})
-
-    def __init__(self, master=None):
-	    super().__init__()
-        frame = tk.Frame(self)
-        self.pack()
-        self.createWidgets()
-
-
-app = Application(master=root)
-app.mainloop()
-root.destroy()
+if __name__ == "__main__": 
+    app = App() 
+    app.mainloop() 
