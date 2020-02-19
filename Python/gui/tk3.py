@@ -12,8 +12,8 @@ class App(root):
         frame.bind("<B1-Motion>", self.print_event) 
         frame.bind("<Enter>", self.print_event) 
         frame.bind("<Leave>", self.print_event) 
-        fred = Button(self, fg = "red", bg = "blue")
-        frame.bind(fred)
+        self.greet_button = Button(master, text="Greet", command=self.greet)
+        self.greet_button.pack()
         frame.pack(padx=50, pady=50) 
 
  
