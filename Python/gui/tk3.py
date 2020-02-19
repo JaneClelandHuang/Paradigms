@@ -20,8 +20,8 @@ class Application(root):
         self.hi_there.pack({"side": "left"})
 
     def __init__(self, master=None):
-	    super().__init__() 
-        frame = tk.Frame(self) 
+	    super().__init__()
+        frame = tk.Frame(self)
         self.pack()
         self.createWidgets()
 
