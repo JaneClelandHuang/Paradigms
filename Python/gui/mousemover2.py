@@ -1,8 +1,8 @@
 from tkinter import * 
 root = Tk()
-canvas = Canvas(root, width=600, height=600)
+canvas = Canvas(root, width=400, height=200)
 canvas.pack()
-canvas.create_oval(100, 100, 100, 100, fill="red")
+canvas.create_oval(100, 100, 10, 10, fill="red")
 
 class MouseMover():
   def __init__(self):
