@@ -1,7 +1,7 @@
 import tkinter as tk 
 root = tk.Tk
 
-class Application(tk.Frame):
+class Application(root):
     def say_hi(self):
         print("hi there, everyone!")
 
@@ -20,7 +20,8 @@ class Application(tk.Frame):
         self.hi_there.pack({"side": "left"})
 
     def __init__(self, master=None):
-        Frame.__init__(self, master)
+	    super().__init__() 
+        frame = tk.Frame(self) 
         self.pack()
         self.createWidgets()
 
