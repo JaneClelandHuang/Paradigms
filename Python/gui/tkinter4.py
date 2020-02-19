@@ -2,7 +2,6 @@ from tkinter import *
 root = Tk()
 canvas = Canvas(root, width=400, height=400)
 canvas.pack()
-canvas.create_oval(50, 50, 100, 100, fill="red")
 
 class MouseMover():
 	
@@ -23,9 +22,7 @@ class MouseMover():
         widget = event.widget
         xc = widget.canvasx(event.x) 
         yc = widget.canvasy(event.y)
-        self.item = widget.find_closest(xc, yc)[0]  # ID for closest
-        print(self.item)
-        canvas.move(self.item, xc-self.previous[0], yc-self.previous[1])
+        canvas.move(self.rectangle, xc-self.previous[0], yc-self.previous[1])
         self.previous = (xc, yc)
 
     def select(self, event):
