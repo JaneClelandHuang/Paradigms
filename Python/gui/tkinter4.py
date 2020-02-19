@@ -6,7 +6,6 @@ canvas.pack()
 class MouseMover():
 	
     def __init__(self):
-        self.item = 0;
         self.previous = (0, 0)
         self.rectangle = canvas.create_rectangle( 
             5, 5, 25, 25, fill = "black") 
@@ -16,16 +15,12 @@ class MouseMover():
         canvas.bind("<B1-Motion>", self.drag) # Another new binding
         canvas.bind("<Double-Button-1>", self.print_event) 
         canvas.bind("<ButtonRelease-1>", self.print_event) 
-        #canvas.bind("<B1-Motion>", self.print_event) 
-
+ 
     def drag(self, event):
         widget = event.widget
         xc = widget.canvasx(event.x) 
         yc = widget.canvasy(event.y)
-        print("MOVEMENT")
-        print(self.rectangle)
         canvas.move(self.rectangle, xc-self.previous[0], yc-self.previous[1])
-        print(self.rectangle)
         self.previous = (xc, yc)
 
     def select(self, event):
@@ -44,3 +39,4 @@ class MouseMover():
 mm = MouseMover()
 
 root.mainloop()
+
