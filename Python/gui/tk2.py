@@ -1,6 +1,7 @@
 import tkinter as tk 
- 
-class App(tk.Tk): 
+root = Tk()
+
+class App(root): 
     def __init__(self): 
         super().__init__() 
         frame = tk.Frame(self, bg="green", 
