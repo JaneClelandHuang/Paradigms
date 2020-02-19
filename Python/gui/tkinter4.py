@@ -16,7 +16,7 @@ class MouseMover():
         canvas.bind("<B1-Motion>", self.drag) # Another new binding
         canvas.bind("<Double-Button-1>", self.print_event) 
         canvas.bind("<ButtonRelease-1>", self.print_event) 
-        canvas.bind("<B1-Motion>", self.print_event) 
+        #canvas.bind("<B1-Motion>", self.print_event) 
 
     def drag(self, event):
         widget = event.widget
