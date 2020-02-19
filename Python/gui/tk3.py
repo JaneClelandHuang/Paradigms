@@ -1,4 +1,4 @@
-from Tkinter import *
+from tkinter import *
 
 class Application(Frame):
     def say_hi(self):
@@ -23,7 +23,7 @@ class Application(Frame):
         self.pack()
         self.createWidgets()
 
-root = Tk()
+root = tk.Tk
 app = Application(master=root)
 app.mainloop()
 root.destroy()
