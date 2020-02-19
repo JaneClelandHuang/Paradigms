@@ -23,9 +23,9 @@ class MouseMover():
         xc = widget.canvasx(event.x) 
         yc = widget.canvasy(event.y)
         print("MOVEMENT")
-        print(rectangle)
+        print(self.rectangle)
         canvas.move(self.rectangle, xc-self.previous[0], yc-self.previous[1])
-        print(rectangle)
+        print(self.rectangle)
         self.previous = (xc, yc)
 
     def select(self, event):
