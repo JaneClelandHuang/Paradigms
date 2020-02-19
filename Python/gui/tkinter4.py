@@ -18,8 +18,9 @@ class MouseMover():
     def drag(self, event):
         widget = event.widget
         xc = widget.canvasx(event.x) 
-        yc = widget.canvasx(event.y)
+        yc = widget.canvasy(event.y)
         self.item = widget.find_closest(xc, yc)[0]  # ID for closest
+		print(self.item)
         canvas.move(self.item, xc-self.previous[0], yc-self.previous[1])
         self.previous = (xc, yc)
 

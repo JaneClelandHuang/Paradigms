@@ -2,11 +2,10 @@ from tkinter import *
 root = Tk()
 canvas = Canvas(root, width=400, height=400)
 canvas.pack()
-#canvas.create_oval(50, 50, 100, 100, fill="red")
 
 class MouseMover():
     def __init__(self):
-        # Bind mouse events to methods (could also be in the constructor)
+        # Bind mouse events to methods
         canvas.bind("<Button-1>", self.print_event)
         canvas.bind("<B1-Motion>", self.print_event)
         canvas.bind("<Double-Button-1>", self.print_event) 
@@ -17,7 +16,7 @@ class MouseMover():
         widget = event.widget # Get handle to canvas 
         # Convert screen coordinates to canvas coordinates
         xc = widget.canvasx(event.x); 
-        yc = widget.canvasx(event.y)
+        yc = widget.canvasy(event.y)
         print((xc, yc, self.item))
 	
     def print_event(self, event): 
