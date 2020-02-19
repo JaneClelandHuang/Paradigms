@@ -1,9 +1,9 @@
 from tkinter import Tk, Label, Button
 root = Tk()
 
-class App(root): 
-    def __init__(self): 
-        super().__init__() 
+class App(): 
+    def __init__(self, master):
+        self.master = master
         frame = tk.Frame(self, bg="green", 
                          height=100, width=100) 
         frame.bind("<Button-1>", self.print_event) 
@@ -22,5 +22,5 @@ class App(root):
         print(event.type, "event", position) 
 
 if __name__ == "__main__": 
-    app = App() 
+    app = App(root) 
     app.mainloop() 
