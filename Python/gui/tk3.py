@@ -1,6 +1,7 @@
 import tkinter as tk 
+root = tk.Tk
 
-class Application(Frame):
+class Application(tk.Frame):
     def say_hi(self):
         print("hi there, everyone!")
 
@@ -23,7 +24,7 @@ class Application(Frame):
         self.pack()
         self.createWidgets()
 
-root = tk.Tk
+
 app = Application(master=root)
 app.mainloop()
 root.destroy()

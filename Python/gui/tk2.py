@@ -1,8 +1,8 @@
 import tkinter as tk 
 root = tk.Tk
 
-class App(): 
-    def __init__(self,root): 
+class App(root): 
+    def __init__(self): 
         super().__init__() 
         frame = tk.Frame(self, bg="green", 
                          height=100, width=100) 
@@ -19,5 +19,5 @@ class App():
         print(event.type, "event", position) 
  
 if __name__ == "__main__": 
-    app = App(root) 
+    app = App() 
     app.mainloop() 
