@@ -6,6 +6,7 @@ canvas.create_oval(50, 50, 100, 100, fill="red")
 
 class MouseMover():
     def __init__(self):
+        self.item = 0;
         self.previous = (0, 0)
         # Bind mouse events to methods
         canvas.bind("<Button-1>", self.print_event)
@@ -16,7 +17,9 @@ class MouseMover():
 
     def drag(self, event):
         widget = event.widget
-        xc = widget.canvasx(event.x); yc = widget.canvasx(event.y)
+        xc = widget.canvasx(event.x) 
+        yc = widget.canvasx(event.y)
+        self.item = widget.find_closest(xc, yc)[0]  # ID for closest
         canvas.move(self.item, xc-self.previous[0], yc-self.previous[1])
         self.previous = (xc, yc)
 
