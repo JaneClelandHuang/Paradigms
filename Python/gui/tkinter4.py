@@ -23,14 +23,16 @@ class MouseMover():
         xc = widget.canvasx(event.x) 
         yc = widget.canvasy(event.y)
         canvas.move(self.rectangle, xc-self.previous[0], yc-self.previous[1])
+		print(rectangle)
         self.previous = (xc, yc)
 
     def select(self, event):
+        print("Item selected")
         widget = event.widget # Get handle to canvas 
         # Convert screen coordinates to canvas coordinates
         xc = widget.canvasx(event.x); 
-        yc = widget.canvasx(event.y)
-        print((xc, yc, self.item))
+        yc = widget.canvasy(event.y)
+        print((xc, yc, self.rectangle))
 	
     def print_event(self, event): 
         position = "(x={}, y={})".format(event.x, event.y) 
