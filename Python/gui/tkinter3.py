@@ -5,18 +5,22 @@ canvas.pack()
 canvas.create_oval(100, 100, 100, 100, fill="red")
 
 class MouseMover():
-  def __init__(self):
+    def __init__(self,purpose):
+        self.purpose = purpose
 
-  def select(self, event):
-    widget = event.widget # Get handle to canvas 
-    # Convert screen coordinates to canvas coordinates
-    xc = widget.canvasx(event.x); 
-    yc = widget.canvasx(event.y)
-    print((xc, yc, self.item))
+    def select(self, event):
+        widget = event.widget # Get handle to canvas 
+        # Convert screen coordinates to canvas coordinates
+        xc = widget.canvasx(event.x); 
+        yc = widget.canvasx(event.y)
+        print((xc, yc, self.item))
 	
-  def print_event(self, event): 
-    position = "(x={}, y={})".format(event.x, event.y) 
-    print(event.type, "event", position) 
+    def print_event(self, event): 
+        position = "(x={}, y={})".format(event.x, event.y) 
+        print(event.type, "event", position) 
+
+# Get an instance of the MouseMover object
+mm = MouseMover("Test")
 
 # Bind mouse events to methods (could also be in the constructor)
 canvas.bind("<Button-1>", self.print_event)
