@@ -2,7 +2,7 @@ from tkinter import *
 root = Tk()
 canvas = Canvas(root, width=400, height=400)
 canvas.pack()
-canvas.create_oval(100, 100, 100, 100, fill="red")
+#canvas.create_oval(50, 50, 100, 100, fill="red")
 
 class MouseMover():
     def __init__(self):
