@@ -32,3 +32,5 @@ mm = MouseMover()
 # Bind mouse events to methods (could also be in the constructor)
 canvas.bind("<Button-1>", mm.select)
 canvas.bind("<B1-Motion>", mm.drag)
+
+root.mainloop()
