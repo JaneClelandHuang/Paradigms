@@ -1,5 +1,5 @@
-import tkinter as tk 
-root = tk.Tk
+from tkinter import Tk, Label, Button
+root = Tk()
 
 class App(root): 
     def __init__(self): 
