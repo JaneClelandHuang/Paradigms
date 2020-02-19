@@ -9,8 +9,8 @@ class MouseMover():
         self.item = 0;
         self.previous = (0, 0)
         # Bind mouse events to methods
-        canvas.bind("<Button-1>", self.print_event)
-        canvas.bind("<B1-Motion>", self.print_event)
+        canvas.bind("<Button-1>", self.select)# Note the new binding
+        canvas.bind("<B1-Motion>", self.drag) # Another new binding
         canvas.bind("<Double-Button-1>", self.print_event) 
         canvas.bind("<ButtonRelease-1>", self.print_event) 
         canvas.bind("<B1-Motion>", self.print_event) 
