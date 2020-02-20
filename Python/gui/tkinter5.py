@@ -30,7 +30,7 @@ class MouseMover():
         #print("HELLO")
         #print(xCoord)
         #print(coords[2])
-        if (self.coords[2] < xCoord > self.coords[0]):# && yCoord < coords[3] && yCoord > coords[1])
+        if (self.coords[2] < xCoord > self.coords[0] and coords[3] < yCoord > coords[1]):
             self.shape = self.rectangle
         else:
             self.shape = None
