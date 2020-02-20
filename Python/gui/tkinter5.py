@@ -7,7 +7,7 @@ class MouseMover():
 	
     def __init__(self):       
         self.rectangle = canvas.create_rectangle( 
-            5, 5, 25, 25, fill = "black") 
+            5, 5, 25, 25, fill = "black")
         self.coords = canvas.coords(self.rectangle)
         self.previous = (self.coords[0],self.coords[1])
         #self.previous = (0, 0)
