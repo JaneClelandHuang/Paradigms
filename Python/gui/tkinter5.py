@@ -27,11 +27,11 @@ class MouseMover():
             self.previous = (xc, yc)
 		
     def setSelectedShape(self,xCoord,yCoord,coords):
-        print(xCoord + " " + coords[2])
-        if (xCoord < coords[2] and xCoord > coords[0])# and yCoord < coords[3] and yCoord > coords[1])
-            self.shape = self.rectangle
-        else:
-            self.shape = None
+        print("HELLO" + xCoord + " " + coords[2])
+        #if (xCoord < coords[2] and xCoord > coords[0])# and yCoord < coords[3] and yCoord > coords[1])
+        #    self.shape = self.rectangle
+        #else:
+        #    self.shape = None
 
     def select(self, event):
         widget = event.widget # Get handle to canvas 
