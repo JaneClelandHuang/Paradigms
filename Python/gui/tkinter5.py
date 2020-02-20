@@ -19,7 +19,7 @@ class MouseMover():
         canvas.bind("<ButtonRelease-1>", self.print_event) 
  
     def drag(self, event):
-        if self.shape = self.rectangle:
+        if (self.shape == self.rectangle):
             widget = event.widget
             xc = widget.canvasx(event.x) 
             yc = widget.canvasy(event.y)
