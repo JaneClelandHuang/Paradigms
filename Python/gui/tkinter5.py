@@ -33,7 +33,7 @@ class MouseMover():
         print(coords[0])
         print(yCoord)
         print(coords[3])
-        print(coords([1])
+        print(coords[1])
 
         if (self.coords[2] < xCoord > self.coords[0] and coords[3] < yCoord > coords[1]):
             self.shape = self.rectangle
