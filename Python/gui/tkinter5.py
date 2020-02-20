@@ -9,8 +9,7 @@ class MouseMover():
         self.rectangle = canvas.create_rectangle( 
             5, 5, 25, 25, fill = "black")
         self.coords = canvas.coords(self.rectangle)
-        self.previous = (self.coords[0],self.coords[1])
-        #self.previous = (0, 0)
+        self.previous = (self.coords[0]+(self.coords[2]/2),self.coords[1]+(self.coords[3]/2))
         canvas.pack() 
         # Bind mouse events to methods
         canvas.bind("<Button-1>", self.select)# Note the new binding
