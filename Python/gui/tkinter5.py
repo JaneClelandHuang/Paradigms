@@ -16,7 +16,7 @@ class MouseMover():
         canvas.bind("<Button-1>", self.select)# Note the new binding
         canvas.bind("<B1-Motion>", self.drag) # Another new binding
         canvas.bind("<Double-Button-1>", self.print_event) 
-        canvas.bind("<ButtonRelease-1>", self.print_event) 
+        canvas.bind("<ButtonRelease-1>", self.release) 
  
     def drag(self, event):
         if (self.shape == self.rectangle):
@@ -25,7 +25,12 @@ class MouseMover():
             yc = widget.canvasy(event.y)
             canvas.move(self.rectangle, xc-self.previous[0], yc-self.previous[1])
             self.previous = (xc, yc)
-		
+
+    def release(self):
+        xc = widget.canvasx(event.x) 
+        yc = widget.canvasy(event.y)
+        self.coords = (xc,yc)
+
     def setSelectedShape(self,xCoord,yCoord,coords):
         print("HELLO")
         print(xCoord)
@@ -36,7 +41,7 @@ class MouseMover():
         print(coords[1])
 
         if (self.coords[0] < xCoord < self.coords[2] and coords[1] < yCoord < coords[3]):
-            self.shape = self.rectangle
+            self.shape = self.rectangle			
         else:
             self.shape = None
 
