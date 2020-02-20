@@ -40,7 +40,7 @@ class MouseMover():
         # Convert screen coordinates to canvas coordinates
         xc = widget.canvasx(event.x) 
         yc = widget.canvasy(event.y)
-        self.setSelectedShape(xc,yc,self.rectangle)
+        self.setSelectedShape(xc,yc,self.coords)
         print((xc, yc, self.rectangle))
 	
     def print_event(self, event): 
