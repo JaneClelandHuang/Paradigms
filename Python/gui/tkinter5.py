@@ -27,9 +27,14 @@ class MouseMover():
             self.previous = (xc, yc)
 		
     def setSelectedShape(self,xCoord,yCoord,coords):
-        #print("HELLO")
-        #print(xCoord)
-        #print(coords[2])
+        print("HELLO")
+        print(xCoord)
+        print(coords[2])
+        print(coords[0])
+        print(yCoord)
+        print(coords[3])
+        print(coords([1])
+
         if (self.coords[2] < xCoord > self.coords[0] and coords[3] < yCoord > coords[1]):
             self.shape = self.rectangle
         else:
