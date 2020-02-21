@@ -6,6 +6,8 @@ canvas.pack()
 class MouseMover():
 
     def __init__(self):       
+        self.width = 20
+        self.height = 20
         self.rectangle = canvas.create_rectangle( 
             5, 5, 25, 25, fill = "black")
         self.shape = None
@@ -39,6 +41,8 @@ class MouseMover():
             yc = widget.canvasy(event.y)
             self.rectPosition[0] = self.rectPosition[0]+xc+self.offset[0]
             self.rectPosition[1] = self.rectPosition[1]+yc+self.offset[1]
+			self.rectPosition[2] = self.rectPosition[0]+self.width
+			self.rectPosition[3] = self.rectPosition[1]+self.height
             print(self.rectPosition[0])
             print(xc)
             print(self.offset[0])
