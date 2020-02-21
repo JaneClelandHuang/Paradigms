@@ -39,7 +39,7 @@ class MouseMover():
             yc = widget.canvasy(event.y)
             self.rectPosition[0] = self.rectPosition[0]+xc+self.offset[0]
             self.rectPosition[1] = self.rectPosition[1]+yc+self.offset[1]
-            print(rectPosition[0])
+            print(self.rectPosition[0])
             print(xc)
             print(self.offset[0])
 
