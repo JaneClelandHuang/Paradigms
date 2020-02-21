@@ -50,6 +50,7 @@ class MouseMover():
         print(rectPosition[1])
 
         if (self.rectPosition[0] < xCoord < self.rectPosition[2] and rectPosition[1] < yCoord < rectPosition[3]):
+            print("INSIDE SHAPE")
             self.shape = self.rectangle			
         else:
             self.shape = None
