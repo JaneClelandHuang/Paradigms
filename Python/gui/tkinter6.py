@@ -1,14 +1,23 @@
-from tkinter import * 
-root = Tk()
-def keyup(e):
-    #print('up', e.char)
-	print("You pressed up")
-def keydown(e):
-    print ('down', e.char)
+from tkinter import *
 
-frame = Frame(root, width=100, height=100)
-frame.bind("<KeyPress>", keydown)
-frame.bind("<KeyRelease>", keyup)
-frame.pack()
-frame.focus_set()
-root.mainloop()
+wn = Tk()
+wn.title('KeyDetect')
+
+m = 0
+
+def down(e):
+    if m == 0:
+        print 'Down\n', e.char, '\n', e
+        global m
+        m = 1
+
+def up(e):
+    if m == 1:
+        print 'Up\n', e.char, '\n', e
+        global m
+        m = 0
+
+wn.bind('<KeyPress>', down)
+wn.bind('<KeyRelease>', up)
+
+wn.mainloop()
