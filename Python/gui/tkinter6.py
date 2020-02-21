@@ -4,9 +4,10 @@ root = Tk()
  
 def key(event):
     kp = repr(event.char)
-    print ("pressed", kp) #repr(event.char))
+    print ("pressed", repr(event.char))
     if (kp == 'x'):
         print ("pressed x", repr(event.char))
+
 def callback(event):
     frame.focus_set()
     print ("clicked at", event.x, event.y)
