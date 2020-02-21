@@ -1,6 +1,6 @@
 # bind and show a key press event with Tkinter
 # tested with Python24      vegaseat     20nov2006
-from Tkinter import *
+from tkinter import * 
 root = Tk()
 prompt = '      Press any key      '
 label1 = Label(root, text=prompt, width=len(prompt), bg='yellow')
