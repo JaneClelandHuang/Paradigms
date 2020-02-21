@@ -13,22 +13,22 @@ and know when the "real" KeyRelease and KeyPress events happen.
 def on_key_release(event):
     global has_prev_key_release
     has_prev_key_release = None
-    print "on_key_release", repr(event.char)
+    print("on_key_release", repr(event.char))
 
 def on_key_press(event):
-    print "on_key_press", repr(event.char)
+    print("on_key_press", repr(event.char))
 
 def on_key_release_repeat(event):
     global has_prev_key_release
     has_prev_key_release = root.after_idle(on_key_release, event)
-    print "on_key_release_repeat", repr(event.char)
+    print("on_key_release_repeat", repr(event.char))
 
 def on_key_press_repeat(event):
     global has_prev_key_release
     if has_prev_key_release:
         root.after_cancel(has_prev_key_release)
         has_prev_key_release = None
-        print "on_key_press_repeat", repr(event.char)
+        print("on_key_press_repeat", repr(event.char))
     else:
         on_key_press(event)
 
