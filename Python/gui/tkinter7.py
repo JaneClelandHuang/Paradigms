@@ -26,10 +26,7 @@ widget.pack(expand=YES, fill=BOTH)
 widget.bind('<Up>',onUpArrowKey)   
 widget.bind('<Down>',onDownArrowKey)
 widget.bind('<Left>',onLeftArrowKey)
-widget.focus_set()
 widget.focus()  
-
-entry = tkroot.Entry(window)
-entry.pack()                                   
+                                
 tkroot.title('Click Me')
 tkroot.mainloop()
