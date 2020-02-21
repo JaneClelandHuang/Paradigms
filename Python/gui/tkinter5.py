@@ -41,10 +41,10 @@ class MouseMover():
             print(self.rectPosition[3])
             print(self.rectPosition[1])
             print(self.offset[0])
-            self.rectPosition[0] = xc#+self.offset[0] #self.rectPosition[0]+xc+self.offset[0]
-            self.rectPosition[1] = yc#+self.offset[1] #self.rectPosition[1]+yc+self.offset[1]
-            self.rectPosition[2] = self.rectPosition[0]+self.width/2
-            self.rectPosition[3] = self.rectPosition[1]+self.height/2
+            self.rectPosition[0] = xc-self.width/2#+self.offset[0] #self.rectPosition[0]+xc+self.offset[0]
+            self.rectPosition[1] = yc-self.height/2#+self.offset[1] #self.rectPosition[1]+yc+self.offset[1]
+            self.rectPosition[2] = self.rectPosition[0]+self.width
+            self.rectPosition[3] = self.rectPosition[1]+self.height
 
 
     def release(self,event):
