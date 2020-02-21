@@ -34,12 +34,12 @@ class MouseMover():
             canvas.move(self.rectangle, xc-self.previous[0], yc-self.previous[1])
             self.previous = (xc, yc)
             print("NEW")
-            print(xCoord)
-            print(rectPosition[2])
-            print(rectPosition[0])
-            print(yCoord)
-            print(rectPosition[3])
-            print(rectPosition[1])
+            print(xc)
+            print(self.rectPosition[2])
+            print(self.rectPosition[0])
+            print(yc)
+            print(self.rectPosition[3])
+            print(self.rectPosition[1])
             print(self.offset[0])
             self.rectPosition[0] = xc#+self.offset[0] #self.rectPosition[0]+xc+self.offset[0]
             self.rectPosition[1] = yc#+self.offset[1] #self.rectPosition[1]+yc+self.offset[1]
