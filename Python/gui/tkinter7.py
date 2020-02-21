@@ -1,10 +1,10 @@
 from tkinter import *
      
 def showPosEvent(event):
-    print 'Widget=%s X=%s Y=%s' % (event.widget, event.x, event.y)
+    print('Widget=%s X=%s Y=%s' % (event.widget, event.x, event.y))
      
 def onArrowKey(event): 
-    print 'Got up arrow key press'
+    print('Got up arrow key press')
      
 tkroot = Tk()
 labelfont = ('courier', 20, 'bold')                
