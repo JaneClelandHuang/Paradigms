@@ -1,27 +1,16 @@
-from tkinter import Tk, Label, Button
+import tkinter as tk
 
-class MyFirstGUI:
-    def __init__(self, master):
-        self.master = master
-        master.title("A simple GUI")
-
-        self.label = Label(master, text="This is our first GUI!")
+class app(tk.Frame):
+    def __init__(self):
+        self.root = tk.Tk()
+        self.root.geometry("300x200")
+        self.label = tk.Label(self.root, text="")
         self.label.pack()
-
-        self.greet_button = Button(master, text="Greet", command=self.greet)
-        self.greet_button.pack()
-
-        self.close_button = Button(master, text="Close", command=master.quit)
-        self.close_button.pack()
         self.root.bind('<Return>', self.callback)
-		
+        self.root.mainloop()
+
+
     def callback(self, event):
-        print("Hello")
-		print("You pressed {}".format(event.keysym))
-
-    def greet(self):
-        print("Greetings!")
-
-root = Tk()
-my_gui = MyFirstGUI(root)
-root.mainloop()
+        self.label["text"] = "You pressed {}".format(event.keysym)
+    
+app()
