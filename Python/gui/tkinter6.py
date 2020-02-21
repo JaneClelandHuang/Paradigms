@@ -1,17 +1,16 @@
-from tkinter import *
+from Tkinter import *
 
-wn = Tk()
-wn.title('KeyDetect')
+main = Tk()
 
-m = 0
+def leftKey(event):
+    print "Left key pressed"
 
-def down(e):
-    print('Down\n', e.char, '\n', e)
+def rightKey(event):
+    print "Right key pressed"
 
-def up(e):
-    print('Up\n', e.char, '\n', e)
-
-wn.bind('<KeyPress>', down)
-wn.bind('<KeyRelease>', up)
-
-wn.mainloop()
+frame = Frame(main, width=100, height=100)
+frame.bind('<Left>', leftKey)
+frame.bind('<Right>', rightKey)
+frame.focus_set()
+frame.pack()
+main.mainloop()
