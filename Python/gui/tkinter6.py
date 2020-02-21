@@ -1,5 +1,5 @@
 from tkinter import *
- print("Hello there")
+print("Hello there")
 main = Tk()
 
 def leftKey(event):
