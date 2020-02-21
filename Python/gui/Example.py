@@ -13,6 +13,11 @@ class MyFirstGUI:
 
         self.close_button = Button(master, text="Close", command=master.quit)
         self.close_button.pack()
+        self.root.bind('<Return>', self.callback)
+		
+    def callback(self, event):
+        print("Hello")
+		print("You pressed {}".format(event.keysym))
 
     def greet(self):
         print("Greetings!")
