@@ -28,10 +28,16 @@ class MouseMover():
             widget = event.widget
             xc = widget.canvasx(event.x) 
             yc = widget.canvasy(event.y)
+			
             # Compute offset
             self.offset = (self.previous[0]-xc,self.previous[1]-yc)
             canvas.move(self.rectangle, xc-self.previous[0], yc-self.previous[1])
             self.previous = (xc, yc)
+            self.rectPosition[0] = xc#+self.offset[0] #self.rectPosition[0]+xc+self.offset[0]
+            self.rectPosition[1] = yc#+self.offset[1] #self.rectPosition[1]+yc+self.offset[1]
+            self.rectPosition[2] = self.rectPosition[0]+self.width/2
+            self.rectPosition[3] = self.rectPosition[1]+self.height/2
+
 
     def release(self,event):
         if (self.shape == self.rectangle):
