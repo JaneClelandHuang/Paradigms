@@ -4,7 +4,7 @@ root = Tk()
  
 def key(event):
     kp = repr(event)
-    print ("pressed", event.char)
+    print ("pressed", kp)
     if (kp == 'x'):
         print ("pressed x", repr(event.char))
 
