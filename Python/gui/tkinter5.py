@@ -10,7 +10,7 @@ class MouseMover():
             5, 5, 25, 25, fill = "black")
         self.shape = None
         self.offset = (0,0) # Position of cursor with respect to the rectangle
-        self.rectPosition = self.rectPosition(self.rectangle)
+        self.rectPosition = self.rectangle
         self.previous = (self.rectPosition[0]+(self.rectPosition[2]/2),self.rectPosition[1]+(self.rectPosition[3]/2))
         canvas.pack() 
         # Bind mouse events to methods
