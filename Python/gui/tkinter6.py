@@ -3,7 +3,8 @@ from tkinter import *
 root = Tk()
 
 def key(event):
-    print "pressed", repr(event.char)
+    print("Key pressed")
+    print("pressed", repr(event.char))
 
 def callback(event):
     frame.focus_set()
