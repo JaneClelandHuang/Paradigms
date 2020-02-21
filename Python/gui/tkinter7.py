@@ -1,3 +1,7 @@
+# Demonstrates the arrow keys.
+# Click on the widget first to get focus.
+#widget.focus() doesn't work
+
 from tkinter import *
      
 def showPosEvent(event):
@@ -22,6 +26,7 @@ widget.pack(expand=YES, fill=BOTH)
 widget.bind('<Up>',onUpArrowKey)   
 widget.bind('<Down>',onDownArrowKey)
 widget.bind('<Left>',onLeftArrowKey)
+widget.focus_set()
 widget.focus()                                     
 tkroot.title('Click Me')
 tkroot.mainloop()
