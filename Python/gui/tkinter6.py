@@ -1,16 +1,17 @@
 from tkinter import *
-print("Hello there")
-main = Tk()
 
-def leftKey(event):
-    print("Left key pressed")
+root = Tk()
 
-def rightKey(event):
-    print("Right key pressed")
+def key(event):
+    print "pressed", repr(event.char)
 
-frame = Frame(main, width=100, height=100)
-frame.bind('<KP_Left>', leftKey)
-frame.bind('<Right>', rightKey)
-frame.focus_set()
+def callback(event):
+    frame.focus_set()
+    print "clicked at", event.x, event.y
+
+frame = Frame(root, width=100, height=100)
+frame.bind("<Key>", key)
+frame.bind("<Button-1>", callback)
 frame.pack()
-main.mainloop()
+
+root.mainloop()
