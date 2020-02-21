@@ -1,7 +1,8 @@
 from tkinter import Tk, Label, Button
 
-class MyGUI:
-    def __init__(self, master):		
+class MyFirstGUI:
+    def __init__(self, master):
+        self.master = master
         master.title("A simple GUI")
 
         self.label = Label(master, text="This is our first GUI!")
@@ -12,15 +13,10 @@ class MyGUI:
 
         self.close_button = Button(master, text="Close", command=master.quit)
         self.close_button.pack()
-        self.label = tk.Label(self.root, text="")
-        self.label.pack()
-        self.root.bind('<Return>', self.callback)
-        self.root.mainloop()
 
-    def callback(self, event):
-        self.label["text"] = "You pressed {}".format(event.keysym)
-    
+    def greet(self):
+        print("Greetings!")
+
 root = Tk()
-my_gui = MyGUI(root)
-
+my_gui = MyFirstGUI(root)
 root.mainloop()
