@@ -9,8 +9,9 @@ class MouseMover():
         self.rectangle = canvas.create_rectangle( 
             5, 5, 25, 25, fill = "black")
         self.shape = None
-        self.coords = canvas.coords(self.rectangle)
-        self.previous = (self.coords[0]+(self.coords[2]/2),self.coords[1]+(self.coords[3]/2))
+        self.offset = (0,0) # Position of cursor with respect to the rectangle
+        self.rectPosition = canvas.rectPosition(self.rectangle)
+        self.previous = (self.rectPosition[0]+(self.rectPosition[2]/2),self.rectPosition[1]+(self.rectPosition[3]/2))
         canvas.pack() 
         # Bind mouse events to methods
         canvas.bind("<Button-1>", self.select)# Note the new binding
@@ -23,6 +24,8 @@ class MouseMover():
             widget = event.widget
             xc = widget.canvasx(event.x) 
             yc = widget.canvasy(event.y)
+            # Compute offset
+            self.offset = (self.previous[0]-xc,self.previous[1]-yc)
             canvas.move(self.rectangle, xc-self.previous[0], yc-self.previous[1])
             self.previous = (xc, yc)
 
@@ -30,19 +33,19 @@ class MouseMover():
         widget = event.widget
         xc = widget.canvasx(event.x) 
         yc = widget.canvasy(event.y)
-        self.coords[0] = xc
-        self.coords[1] = yc
+        self.rectPosition[0] = xc+self.offset[0]
+        self.rectPosition[1] = yc+self.offset[1]
 
-    def setSelectedShape(self,xCoord,yCoord,coords):
+    def setSelectedShape(self,xCoord,yCoord,rectPosition):
         print("HELLO")
         print(xCoord)
-        print(coords[2])
-        print(coords[0])
+        print(rectPosition[2])
+        print(rectPosition[0])
         print(yCoord)
-        print(coords[3])
-        print(coords[1])
+        print(rectPosition[3])
+        print(rectPosition[1])
 
-        if (self.coords[0] < xCoord < self.coords[2] and coords[1] < yCoord < coords[3]):
+        if (self.rectPosition[0] < xCoord < self.rectPosition[2] and rectPosition[1] < yCoord < rectPosition[3]):
             self.shape = self.rectangle			
         else:
             self.shape = None
@@ -52,7 +55,7 @@ class MouseMover():
         # Convert screen coordinates to canvas coordinates
         xc = widget.canvasx(event.x) 
         yc = widget.canvasy(event.y)
-        self.setSelectedShape(xc,yc,self.coords)
+        self.setSelectedShape(xc,yc,self.rectPosition)
         print((xc, yc, self.rectangle))
 	
     def print_event(self, event): 
