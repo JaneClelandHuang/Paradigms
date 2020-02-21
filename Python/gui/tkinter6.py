@@ -7,7 +7,7 @@ label1 = Label(root, text=prompt, width=len(prompt), bg='yellow')
 label1.pack()
 def key(event):
     if event.char == event.keysym:
-        msg = 'Normal Key %r' % event.char
+        print('Normal Key %r' % event.char)
     elif len(event.char) == 1:
         msg = 'Punctuation Key %r (%r)' % (event.keysym, event.char)
     else:
