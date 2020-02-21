@@ -12,6 +12,7 @@ class MouseMover():
         self.offset = (0,0) # Position of cursor with respect to the rectangle
         self.rectPosition = canvas.coords(self.rectangle)
         self.previous = (self.rectPosition[0]+(self.rectPosition[2]/2),self.rectPosition[1]+(self.rectPosition[3]/2))
+        print(self.previous)
         canvas.pack() 
         # Bind mouse events to methods
         canvas.bind("<Button-1>", self.select)# Note the new binding
@@ -26,6 +27,7 @@ class MouseMover():
             yc = widget.canvasy(event.y)
             # Compute offset
             self.offset = (self.previous[0]-xc,self.previous[1]-yc)
+            print(self.offset)
             canvas.move(self.rectangle, xc-self.previous[0], yc-self.previous[1])
             self.previous = (xc, yc)
 
