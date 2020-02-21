@@ -1,7 +1,8 @@
 from tkinter import * 
 root = Tk()
 def keyup(e):
-    print('up', e.char)
+    #print('up', e.char)
+	print("You pressed up")
 def keydown(e):
     print ('down', e.char)
 
