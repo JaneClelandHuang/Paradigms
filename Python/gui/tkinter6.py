@@ -7,6 +7,8 @@ def key(event):
     print ("pressed", kp)
     if (kp == 'x'):
         print ("pressed x", repr(event.char))
+    if (kp.keycode=102)
+        print ("FOUND IT")
 
 def callback(event):
     frame.focus_set()
