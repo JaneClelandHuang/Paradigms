@@ -1,8 +1,8 @@
 from Tkinter import *
 def keyup(e):
-    print 'up', e.char
+    print('up', e.char)
 def keydown(e):
-    print 'down', e.char
+    print ('down', e.char)
 
 root = Tk()
 frame = Frame(root, width=100, height=100)
