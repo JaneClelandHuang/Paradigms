@@ -8,7 +8,7 @@ def key(event):
 
 def callback(event):
     frame.focus_set()
-    print "clicked at", event.x, event.y
+    print("clicked at", event.x, event.y)
 
 frame = Frame(root, width=100, height=100)
 frame.bind("<Key>", key)
