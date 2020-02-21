@@ -3,7 +3,7 @@ from tkinter import *
 root = Tk()
  
 def key(event):
-    kp = repr(event.char)
+    kp = repr(event)
     print ("pressed", event.char)
     if (kp == 'x'):
         print ("pressed x", repr(event.char))
