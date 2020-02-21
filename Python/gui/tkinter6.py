@@ -9,7 +9,7 @@ def rightKey(event):
     print("Right key pressed")
 
 frame = Frame(main, width=100, height=100)
-frame.bind('<Left>', leftKey)
+frame.bind('<KP_Left>', leftKey)
 frame.bind('<Right>', rightKey)
 frame.focus_set()
 frame.pack()
