@@ -4,8 +4,8 @@ app = tk.Tk()
 app.geometry("200x100")
 
 def callback(event):
-    label["text"] = "You pressed Enter"
-
+    #label["text"] = "You pressed Enter"
+    print("You pressed Enter")
 app.bind('<Return>', callback)
 
 label = tk.Label(app, text="")
