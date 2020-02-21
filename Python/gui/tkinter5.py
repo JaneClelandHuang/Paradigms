@@ -9,7 +9,7 @@ class MouseMover():
         self.width = 20
         self.height = 20
         self.rectangle = canvas.create_rectangle( 
-            5, 5, 25, 25, fill = "black")
+            0, 0, 20, 20, fill = "black")
         self.shape = None
         self.offset = (0,0) # Position of cursor with respect to the rectangle
         self.rectPosition = canvas.coords(self.rectangle)
@@ -28,7 +28,7 @@ class MouseMover():
             xc = widget.canvasx(event.x) 
             yc = widget.canvasy(event.y)
             # Compute offset
-            self.offset = (self.previous[0]-xc/2,self.previous[1]-yc/2)
+            self.offset = (self.previous[0]-xc,self.previous[1]-yc)
             canvas.move(self.rectangle, xc-self.previous[0], yc-self.previous[1])
             self.previous = (xc, yc)
 

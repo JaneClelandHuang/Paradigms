@@ -1,3 +1,6 @@
+# Testing focus issue
+# Seems to be a well-reporte tkinter bug
+
 from tkinter import *
 
 window = Tk()
