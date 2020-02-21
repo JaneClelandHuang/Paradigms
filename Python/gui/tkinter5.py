@@ -23,15 +23,15 @@ class MouseMover():
         canvas.bind("<ButtonRelease-1>", self.release) 
  
     def drag(self, event):
-        print("Do nothing")
-        #if (self.shape == self.rectangle):
-        #    widget = event.widget
-        #    xc = widget.canvasx(event.x) 
-        #    yc = widget.canvasy(event.y)
-        #    # Compute offset
-        #    self.offset = (self.previous[0]-xc,self.previous[1]-yc)
-        #    canvas.move(self.rectangle, xc-self.previous[0], yc-self.previous[1])
-        #    self.previous = (xc, yc)
+        #print("Do nothing")
+        if (self.shape == self.rectangle):
+            widget = event.widget
+            xc = widget.canvasx(event.x) 
+            yc = widget.canvasy(event.y)
+            # Compute offset
+            self.offset = (self.previous[0]-xc,self.previous[1]-yc)
+            canvas.move(self.rectangle, xc-self.previous[0], yc-self.previous[1])
+            self.previous = (xc, yc)
 
     def release(self,event):
         if (self.shape == self.rectangle):
