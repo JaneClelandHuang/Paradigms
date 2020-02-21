@@ -1,22 +1,13 @@
-from tkinter import Tk, Label, Button
-
-class MyFirstGUI:
-    def __init__(self, master):
-        self.master = master
-        master.title("A simple GUI")
-
-        self.label = Label(master, text="This is our first GUI!")
-        self.label.pack()
-
-        self.greet_button = Button(master, text="Greet", command=self.greet)
-        self.greet_button.pack()
-
-        self.close_button = Button(master, text="Close", command=master.quit)
-        self.close_button.pack()
-
-    def greet(self):
-        print("Greetings!")
+from Tkinter import *
+def keyup(e):
+    print 'up', e.char
+def keydown(e):
+    print 'down', e.char
 
 root = Tk()
-my_gui = MyFirstGUI(root)
+frame = Frame(root, width=100, height=100)
+frame.bind("<KeyPress>", keydown)
+frame.bind("<KeyRelease>", keyup)
+frame.pack()
+frame.focus_set()
 root.mainloop()
