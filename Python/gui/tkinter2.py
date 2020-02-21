@@ -1,3 +1,6 @@
+# Displays some tkinter buttons
+# Binds buttons to handlers
+
 from tkinter import Tk, Label, Button
 
 class MyFirstGUI:

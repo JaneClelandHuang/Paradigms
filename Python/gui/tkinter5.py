@@ -30,7 +30,8 @@ class MouseMover():
         widget = event.widget
         xc = widget.canvasx(event.x) 
         yc = widget.canvasy(event.y)
-        self.coords = (xc,yc)
+        self.coords[0] = xc
+        self.coords[2] = yc
 
     def setSelectedShape(self,xCoord,yCoord,coords):
         print("HELLO")
