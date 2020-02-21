@@ -23,6 +23,7 @@ class MouseMover():
         canvas.bind("<ButtonRelease-1>", self.release) 
  
     def drag(self, event):
+        print("Do nothing")
         #if (self.shape == self.rectangle):
         #    widget = event.widget
         #    xc = widget.canvasx(event.x) 
