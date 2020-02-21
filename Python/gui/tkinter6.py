@@ -32,7 +32,7 @@ def on_key_press_repeat(event):
     else:
         on_key_press(event)
 
-frame = tkinter.Frame(root, width=100, height=100)
+frame = tk.Frame(root, width=100, height=100)
 frame.bind("<KeyRelease-a>", on_key_release_repeat)
 frame.bind("<KeyPress-a>", on_key_press_repeat)
 frame.bind("<KeyRelease-s>", on_key_release_repeat)
