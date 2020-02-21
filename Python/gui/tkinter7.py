@@ -29,7 +29,7 @@ widget.bind('<Left>',onLeftArrowKey)
 widget.focus_set()
 widget.focus()  
 
-entry = tk.Entry(window)
+entry = tkroot.Entry(window)
 entry.pack()                                   
 tkroot.title('Click Me')
 tkroot.mainloop()
