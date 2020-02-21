@@ -9,7 +9,6 @@ class app(tk.Frame):
         self.root.bind('<Return>', self.callback)
         self.root.mainloop()
 
-
     def callback(self, event):
         self.label["text"] = "You pressed {}".format(event.keysym)
     
