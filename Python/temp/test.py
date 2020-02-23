@@ -38,7 +38,6 @@ class MouseMover():
        # canvas.focus()  
                                         
     def onUpArrowKey(self, event): 
-        print('Up arrow key pressed')    def dragUp(self,event):
         print("getss into function")  # currently does not print
         widget = event.widget 
         xc = widget.canvasx(event.x) 
