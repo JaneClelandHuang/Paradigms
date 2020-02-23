@@ -39,4 +39,4 @@ if __name__=='__main__':
 
 
 for obj in list: 
-    print( obj.type, obj.sound, sep =' ' ) 
+    print( type(obj), obj.sound, sep =' ' ) 
