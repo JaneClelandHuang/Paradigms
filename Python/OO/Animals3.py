@@ -42,5 +42,5 @@ if __name__=='__main__':
     list.append( Chinchilla("Jose"))
 
 for obj in list: 
-    print(obj.sound())
-    print(obj.name)
+    print(obj.name, 'says', obj.sound())
+
