@@ -17,8 +17,10 @@ class Sheep(Animal):
         return 'baaaa'
 
 if __name__=='__main__':
-    s=Horse('CJ')
-    assert s.speak() == 'CJ says neigh'
+    h=Horse('CJ')
+    print(h.speak())
+    assert h.speak() == 'CJ says neigh'
     c = Cow('Bessie')
+    print(c.speak())
     assert c.speak() == 'Bessie says moooo'
     assert Sheep('Little Lamb').speak() == 'Little Lamb says baaaa'
