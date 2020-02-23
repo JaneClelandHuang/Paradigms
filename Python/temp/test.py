@@ -31,13 +31,14 @@ class MouseMover():
         canvas.bind("<B1-Motion>", self.drag) # Another new binding
         canvas.bind("<Double-Button-1>", self.print_event) 
         canvas.bind("<ButtonRelease-1>", self.release) 
-        canvas.bind("<Up>",self.dragUp)   
+        canvas.bind("<Up>",self.onUpArrowKey)   
        # canvas.bind('<Down>',self.dragDown)
        # canvas.bind('<Left>',self.dragLeft)
        # canvas.bind('<Right>',self.dragRight)
        # canvas.focus()  
                                         
-    def dragUp(self,event):
+    def onUpArrowKey(self.event): 
+        print('Up arrow key pressed')    def dragUp(self,event):
         print("getss into function")  # currently does not print
         widget = event.widget 
         xc = widget.canvasx(event.x) 
