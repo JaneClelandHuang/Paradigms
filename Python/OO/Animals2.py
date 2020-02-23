@@ -6,10 +6,6 @@ class Animal:
     def speak(self):
         return '{} says {}'.format(self.name,self.sound())
 
-class Cow(Animal):
-    def sound(self):
-        return 'moooo'
-
 class Horse(Animal):
     def sound(self):
         return 'neigh'
@@ -26,10 +22,8 @@ class Chinchilla(Animal):
     def sound(self):
         return 'tchh'
 
-if __name__=='__main__':
-    # creating list        
+if __name__=='__main__':     
     list = []  
-  
     # appending instances to list  
     list.append( Horse("Apache")) 
     list.append( Duck("Kimberley ShnickleFritz"))
@@ -39,3 +33,4 @@ if __name__=='__main__':
 
 for obj in list: 
     print(obj.name, 'says', obj.sound())
+
