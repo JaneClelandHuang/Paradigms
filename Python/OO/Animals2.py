@@ -37,7 +37,6 @@ if __name__=='__main__':
     list.append( Dog("Lucy"))
     list.append( Chinchilla("Jose"))
 
-
 for obj in list: 
-    #print( type(obj), obj.sound, sep =' ' ) 
-    print(id(obj))
+    print( type(obj)) 
+    #print(id(obj))
