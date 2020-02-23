@@ -1,5 +1,5 @@
 class Animal:
-    def__init__(self,name):
+    def __init__(self,name):
         self.name = name
     def speak(self):
         return '{} says {}'.format(self.name,self.sound())
