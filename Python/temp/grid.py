@@ -5,8 +5,7 @@ class Grid:
 
     def __init__(self,width=240,height=420):
 	    this.width = width
-        this.height = height
-	    #c.delete('grid_line') # Will only remove the grid_line
+        this.height = height #c.delete('grid_line') # Will only remove the grid_line
 
         # Creates all vertical lines at intevals of 10
         for i in range(0,w+10,10):
