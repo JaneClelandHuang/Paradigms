@@ -7,8 +7,8 @@ class Duck():
     def quack(self):
         print("Quack Quack")
     
-    def fly(self):
-        print("I'm flying")
+    def swim(self):
+        print("I'm swimming")
 
 class MallardDuck(Duck): 
     def duckName(self):
@@ -30,7 +30,10 @@ list.append(RubberDucky())
 for duck in list:
     duck.duckName()
     duck.quack()
-    duck.fly()
+    duck.swim()
+    
+    
+    
     
     
 
