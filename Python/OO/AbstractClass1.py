@@ -25,11 +25,10 @@ class Hexagon(Polygon):
         print("I have 6 sides") 
 
 # Driver code 
-triangle = Triangle() 
-triangle.noofsides() 
+list = []
+list.append(Triangle)
+list.append(Pentagon())
+list.append(Hexagon())
 
-pentagon = Pentagon() 
-pentagon.noofsides() 
-
-hexagon = Hexagon() 
-hexagon.noofsides() 
+for shape in list:
+    print (shape.noofsides())
