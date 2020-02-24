@@ -16,6 +16,7 @@ class keyPresser():
         print('Up arrow key pressed')
 
     def onDownArrowKey(event): 
+        canvas.move(self.rectangle,20,20)
         print('Down arrow key pressed')
 
     def onLeftArrowKey(event): 
