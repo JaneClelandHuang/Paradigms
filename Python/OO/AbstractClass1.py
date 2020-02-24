@@ -29,8 +29,10 @@ print(len(list))
 list.append(Pentagon())
 list.append(Hexagon())
 
+number = 0;
 for shape in list:
-    print ("Before")
+    print (number)
+    number = number+1
     print (shape.noofsides())# Driver code 
     print ("After")
     
