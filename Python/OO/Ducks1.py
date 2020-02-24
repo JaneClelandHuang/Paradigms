@@ -3,8 +3,7 @@
 from abc import ABC, abstractmethod
 
 class Duck(ABC): 
-    def __init__(self, value):
-        self.value = value
+    def __init__(self):
         super().__init__()
     
     @abstractmethod
