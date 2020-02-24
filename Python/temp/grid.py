@@ -21,9 +21,4 @@ class Grid:
     #end of the class definition  
   
 # Create an object of the class  
-person1 = Person(5,6)  
-#Create another object of the same class  
-person2 = Person(9,10)  
-#call member methods of the objects  
-person1.showAge()  
-person2.showName() 
+grid = Grid()
