@@ -11,15 +11,15 @@ class Duck():
         print("I'm flying")
 
 class MallardDuck(Duck,name): 
-    def duckName(self)
+    def duckName(self):
         print ("I'm a Mallard Duck")
     
 class RedHeadDuck(Duck):
-    def duckName(self)
+    def duckName(self):
         print ("I'm a RedHeadDuck")
         
 class RubberDucky(Duck):
-    def duckName(self)
+    def duckName(self):
         print ("I'm just a RubberDucky")
 
 list = []
