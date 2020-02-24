@@ -16,10 +16,10 @@ class Duck(ABC):
         pass
         
     def quack(self):
-        quackBehavior.quack()
+        self.quackBehavior.quack()
     
     def fly(self):
-        flyBehavior.fly()
+        self.flyBehavior.fly()
 
 class MallardDuck(Duck): 
     def display(self):
