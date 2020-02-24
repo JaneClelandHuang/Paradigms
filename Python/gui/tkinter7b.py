@@ -21,6 +21,9 @@ class keyPresser():
     def onLeftArrowKey(event): 
         print('Left arrow key pressed')
 
+    def print_event(self, event): 
+        print(event.type) 
+
     def __init__(self):       
         self.width = 20
         self.height = 20
