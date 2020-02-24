@@ -10,8 +10,8 @@ class Grid():
     def __init__(self, root, canvas, height=360, width=240):  
         self.height = height  
         self.width = width  
-		self.root = root
-		self.canvas = canvas
+        self.root = root
+        self.canvas = canvas
 		
         # Creates all vertical lines at intevals of 100
         for i in range(0, self.width+10, 10):
