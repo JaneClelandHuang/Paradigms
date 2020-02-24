@@ -29,15 +29,10 @@ class keyPresser():
         self.height = 20
         self.rectangle = canvas.create_rectangle( 
             0, 0, 20, 20, fill = "black")
-        self.shape = None
-        self.offset = (0,0) # Position of cursor with respect to the rectangle
-        self.rectPosition = canvas.coords(self.rectangle)
-        self.previous = (self.rectPosition[0]+(self.rectPosition[2]/2),self.rectPosition[1]+(self.rectPosition[3]/2))
-        print(self.previous)
-        canvas.pack() 
         # Bind keypress events to methods
         canvas.bind("<Up>", self.print_event)# Note the new binding
         canvas.bind("<Down>", self.print_event) # Another new binding
+        canvas.pack() 
  
 # Get an instance of the MouseMover object
 mm = keyPresser()
