@@ -4,8 +4,8 @@ root = tk.Tk()
 class Grid:
 
     def __init__(self,width=240,height=420):
-	    this.width = width
-        this.height = height
+	    self.width = width
+        self.height = height
 
         # Creates all vertical lines at intevals of 10
         for i in range(0,w+10,10):
@@ -15,8 +15,8 @@ class Grid:
         for i in range(0,h+10,10):
             c.create_line([(0, i), (w, i)], tag='grid_line')
 
-        this.c = tk.Canvas(root, height=h, width=w, bg='white')
-        this.c.pack(fill=tk.BOTH, expand=True)
+        self.c = tk.Canvas(root, height=h, width=w, bg='white')
+        self.c.pack(fill=tk.BOTH, expand=True)
 
         #c.bind('<Configure>', create_grid)
 
