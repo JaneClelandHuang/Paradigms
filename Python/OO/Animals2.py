@@ -33,4 +33,5 @@ if __name__=='__main__':
 
 for obj in list: 
     print(obj.name, 'says', obj.sound())
+    print(obj.speak())
 
