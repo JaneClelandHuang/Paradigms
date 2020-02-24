@@ -8,8 +8,10 @@ class Polygon():
 
 class Triangle(Polygon): 
     # overriding abstract method 
-    def noofsides(self): 
-        print("I have 3 sides") 
+    #def noofsides(self): 
+    #    print("I have 3 sides") 
+    def extra(self):
+        print("Dummy")
 
 class Pentagon(Polygon): 
     # overriding abstract method 
