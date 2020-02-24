@@ -10,5 +10,4 @@ canvas.bind("<Down>", fred)
 canvas.focus()
 canvas.pack()
  
-mm = keyPresser()
 root.mainloop()
