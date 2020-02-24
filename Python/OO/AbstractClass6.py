@@ -1,5 +1,5 @@
 # This does the same thing but imports the Abstract Class
-import AbstractClass5
+from AbstractClass5 import AbstractClassExample
 
 class DoAdd42(AbstractClassExample):
 
