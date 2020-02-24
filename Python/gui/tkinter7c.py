@@ -3,10 +3,10 @@ root = Tk()
 canvas = Canvas(root, width=400, height=400)
 canvas.pack()
 
-def fred(self,event): 
+def fred(event): 
     print('Down arrow key pressed')
 
-canvas.bind("<Down>", self.fred)
+canvas.bind("<Down>", fred)
 canvas.focus()
 canvas.pack()
  
