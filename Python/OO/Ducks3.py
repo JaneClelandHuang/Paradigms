@@ -38,8 +38,8 @@ class RubberDucky(Duck):
 
 list = []
 list.append(MallardDuck(FlyWithWings(),Quack()))
-#list.append(RedHeadDuck(FlyWithWings(),Quack()))
-#list.append(RubberDucky(FlyNoWay(),Peep()))
+list.append(RedHeadDuck(FlyWithWings(),Quack()))
+list.append(RubberDucky(FlyNoWay(),Peep()))
 
 for duck in list:
     duck.display()
