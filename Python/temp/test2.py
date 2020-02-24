@@ -5,7 +5,7 @@
 from tkinter import *
 tkroot = Tk()
 
-def onUpArrowKey(): 
+def onUpArrowKey(event): 
     widget = event.widget 
     print('Up arrow key pressed')
 
@@ -17,7 +17,7 @@ class myClass:
     #    widget = event.widget 
     #   print('Up arrow key pressed')
 
-    def onDownArrowKey(event): 
+    def onDownArrowKey(): 
         print('Down arrow key pressed')
 
     def onLeftArrowKey(event): 
