@@ -5,13 +5,17 @@
 from tkinter import *
 tkroot = Tk()
 
+def onUpArrowKey(): 
+    widget = event.widget 
+    print('Up arrow key pressed')
+
 class myClass:
     def showPosEvent(event):
         print('Widget=%s X=%s Y=%s' % (event.widget, event.x, event.y))
      
-    def onUpArrowKey(): 
-        widget = event.widget 
-        print('Up arrow key pressed')
+    #def onUpArrowKey(): 
+    #    widget = event.widget 
+    #   print('Up arrow key pressed')
 
     def onDownArrowKey(event): 
         print('Down arrow key pressed')
@@ -26,7 +30,7 @@ class myClass:
         widget.config(height=5, width=20)                  
         widget.pack(expand=YES, fill=BOTH)
 
-        widget.bind('<Up>',self.onUpArrowKey)   
+        widget.bind('<Up>',onUpArrowKey)   
         widget.bind('<Down>',self.onDownArrowKey)
         widget.bind('<Left>',self.onLeftArrowKey)
         widget.focus()  
