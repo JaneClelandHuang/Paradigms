@@ -1,7 +1,7 @@
 from tkinter import *
 tkroot = Tk()
 
-class myClass:
+class myClass():
     def onDownArrowKey(): 
         print('Down arrow key pressed')
 
