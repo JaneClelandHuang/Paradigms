@@ -6,7 +6,6 @@ from tkinter import *
 tkroot = Tk()
 
 def onUpArrowKey(event): 
-    widget = event.widget 
     print('Up arrow key pressed')
 
 class myClass:
@@ -23,7 +22,8 @@ class myClass:
     def onLeftArrowKey(event): 
         print('Left arrow key pressed')
          
-    def __init__(self):    
+    def __init__(self):   
+        print("Starting up the class")    
         labelfont = ('courier', 20, 'bold')                
         widget = Label(tkroot, text='Testing arrow keys')
         widget.config(bg='gray', font=labelfont)            
