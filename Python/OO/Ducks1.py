@@ -34,7 +34,7 @@ class RubberDucky(Duck):
 list = []
 list.append(MallardDuck())
 list.append(RedHeadDuck())
-list.append(RubbyDucky())
+list.append(RubberDucky())
 
 for duck in list:
     print (duck.quack(),duck.fly())
