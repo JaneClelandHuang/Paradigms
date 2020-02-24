@@ -45,3 +45,4 @@ for duck in list:
     duck.display()
     duck.quack()
     duck.fly()
+    print("\n")
