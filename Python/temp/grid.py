@@ -1,6 +1,6 @@
 from tkinter import * 
 root = Tk()
-canvas = Canvas(root, width=400, height=400)
+canvas = Canvas(root, width=240, height=360)
 canvas.pack()
 
 #definition of the class starts here  
@@ -10,6 +10,8 @@ class Grid:
     def __init__(self, height=360, width=240):  
         self.height = height  
         self.width = width  
+        canvas = Canvas(root, self.width, self.height)
+        canvas.pack()
   
     #defining class methods  
     def showName(self):  
