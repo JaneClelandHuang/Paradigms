@@ -10,7 +10,7 @@ class Duck():
     def fly(self):
         print("I'm flying")
 
-class MallardDuck(Duck,name): 
+class MallardDuck(Duck): 
     def duckName(self):
         print ("I'm a Mallard Duck")
     
