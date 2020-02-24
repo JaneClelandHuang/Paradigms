@@ -4,7 +4,7 @@ canvas = Canvas(root, width=240, height=360)
 canvas.pack()
 
 #definition of the class starts here  
-class Grid:  
+class Grid():  
 
     #defining constructor  
     def __init__(self, height=360, width=240):  
