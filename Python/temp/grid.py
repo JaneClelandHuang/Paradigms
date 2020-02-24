@@ -7,7 +7,9 @@ canvas.pack()
 class Grid():  
 
     #defining constructor  
-    def __init__(self, root, canvas, height=360, width=240):  
+    def __init__(self, root, canvas, height=360, width=240): 
+        canvas = Canvas(root, width, height)
+        canvas.pack()	
         self.height = height  
         self.width = width  
         self.root = root
@@ -27,3 +29,4 @@ class Grid():
   
 # Create an object of the class  
 grid = Grid(root,canvas)
+root.mainloop()
