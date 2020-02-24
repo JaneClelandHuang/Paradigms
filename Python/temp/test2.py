@@ -33,3 +33,4 @@ class myClass:
                                 
 tkroot.title('Click Me')
 tkroot.mainloop()
+myc = myClass()
