@@ -26,9 +26,9 @@ class Hexagon(Polygon):
 
 # Driver code 
 list = []
-list.append(Triangle)
+list.append(Triangle())
 list.append(Pentagon())
 list.append(Hexagon())
 
 for shape in list:
-    print (shape.noofsides())
+    print (shape.noofsides())# Driver code 
