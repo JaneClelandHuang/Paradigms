@@ -7,7 +7,7 @@ def create_grid(event=None):
 
     # Creates all vertical lines at intevals of 10
     #for i in range(0, w, 10):
-	for i in range(0,180,10)
+    for i in range(0,180,10)
         c.create_line([(i, 0), (i, h)], tag='grid_line')
 
     # Creates all horizontal lines at intevals of 10
