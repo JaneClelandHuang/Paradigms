@@ -8,7 +8,7 @@ class keyPresser():
         print('Down arrow key pressed')
 
     def __init__(self):       
-        canvas.bind("<Down>", fred)
+        canvas.bind("<Down>", self.fred)
         canvas.pack() 
  
 mm = keyPresser()
