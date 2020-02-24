@@ -1,7 +1,9 @@
 # Ducks basic
 from abc import ABC, abstractmethod
-from QuackBehavior import QuackBehavior as qb
-from FlyBehavior import FlyBehavior as fb
+#from QuackBehavior import QuackBehavior as qb
+#from FlyBehavior import FlyBehavior as fb
+from QuackBehavior import *
+from FlyBehavior import *
 
 class Duck(ABC): 
     def __init__(self,flyBehavior,quackBehavior):
@@ -35,7 +37,7 @@ class RubberDucky(Duck):
         print ("Peep Peep")
 
 list = []
-list.append(MallardDuck(fb.FlyWithWings(),qbQuack()))
+list.append(MallardDuck(FlyWithWings(),qbQuack()))
 #list.append(RedHeadDuck(FlyWithWings(),Quack()))
 #list.append(RubberDucky(FlyNoWay(),Peep()))
 
