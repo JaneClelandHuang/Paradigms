@@ -27,5 +27,5 @@ class Grid():
     #end of the class definition  
   
 # Create an object of the class  
-grid = Grid(root,canvas)
+grid = Grid()
 root.mainloop()
