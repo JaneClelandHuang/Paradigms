@@ -22,15 +22,15 @@ class Duck(ABC):
         flyBehavior.fly()
 
 class MallardDuck(Duck): 
-    def display(self,flyBehavior,quackBehavior):
+    def display(self):
         print ("I'm a Mallard Duck")
     
 class RedHeadDuck(Duck):
-    def display(self,flyBehavior,quackBehavior):
+    def display(self):
         print ("I'm a RedHeadDuck")
         
 class RubberDucky(Duck):
-    def display(self,flyBehavior,quackBehavior):
+    def display(self):
         print ("I'm just a RubberDucky")
 
     def quack(self):
