@@ -8,11 +8,8 @@ class Polygon(ABC):
         pass
 
 class Triangle(Polygon): 
-    # overriding abstract method 
-    #def noofsides(self): 
-    #    print("I have 3 sides") 
-    def extra(self):
-        print("Dummy")
+    def noofsides(self):
+        print("I have three sides")
 
 class Pentagon(Polygon): 
     # overriding abstract method 
@@ -27,8 +24,11 @@ class Hexagon(Polygon):
 # Driver code 
 list = []
 list.append(Triangle())
+print(list.len)
 list.append(Pentagon())
 list.append(Hexagon())
 
 for shape in list:
     print (shape.noofsides())# Driver code 
+    
+
