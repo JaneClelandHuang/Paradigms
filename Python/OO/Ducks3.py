@@ -37,7 +37,7 @@ class RubberDucky(Duck):
         print ("Peep Peep")
 
 list = []
-list.append(MallardDuck(FlyWithWings(),qbQuack()))
+list.append(MallardDuck(FlyWithWings(),Quack()))
 #list.append(RedHeadDuck(FlyWithWings(),Quack()))
 #list.append(RubberDucky(FlyNoWay(),Peep()))
 
