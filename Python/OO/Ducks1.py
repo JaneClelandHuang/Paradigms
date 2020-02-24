@@ -37,5 +37,6 @@ list.append(RedHeadDuck())
 list.append(RubberDucky())
 
 for duck in list:
-    print (duck.quack())
+    duck.quack()
+    duck.fly()
 

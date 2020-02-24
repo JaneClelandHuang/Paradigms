@@ -32,10 +32,6 @@ list.append(Hexagon())
 
 number = 0;
 for shape in list:
-    print("Start loop")
-    print (number)
-    number = number+1
-    print (shape.noofsides())# Driver code 
-    print ("After")
+    shape.noofsides()
     
 
