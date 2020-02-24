@@ -10,7 +10,7 @@ class Grid:
     def __init__(self, height=360, width=240):  
         self.height = height  
         self.width = width  
-        canvas = Canvas(root, width, height)
+        canvas = Canvas(root, width, height,bg='white')
         canvas.pack()
   
     #defining class methods  
