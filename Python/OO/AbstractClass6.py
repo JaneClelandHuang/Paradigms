@@ -1,4 +1,7 @@
 # This does the same thing but imports the Abstract Class
+# Note: Name the file (AbstractClass5) and the class
+# that you want to import.
+
 from AbstractClass5 import AbstractClassExample
 
 class DoAdd42(AbstractClassExample):
