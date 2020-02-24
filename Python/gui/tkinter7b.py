@@ -9,7 +9,8 @@ class keyPresser():
 
     def __init__(self):       
         canvas.bind("<Down>", self.fred)
-        canvas.pack() 
+        canvas.focus()
+        canvas.pack()
  
 mm = keyPresser()
 root.mainloop()
