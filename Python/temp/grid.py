@@ -1,10 +1,23 @@
 import tkinter as tk
 root = tk.Tk()
  
-class Grid:
-    def __init__(self,width=240,height=360): #,width=240,height=420):
-	    self.width = width
-        self.height = height
+class GeekforGeeks: 
+	geek = "" 
 
-grid = Grid()
-root.mainloop()
+	# default constructor 
+	def __init__(self): 
+		self.geek = "GeekforGeeks"
+        self.width = 240
+        self.height = 360
+		
+	# a method for printing data members 
+	def print_Geek(self): 
+		print(self.geek) 
+
+
+# creating object of the class 
+obj = GeekforGeeks() 
+
+# calling the instance method using the object obj 
+obj.print_Geek() 
+
