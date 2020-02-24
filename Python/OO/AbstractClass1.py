@@ -24,7 +24,7 @@ class Hexagon(Polygon):
 # Driver code 
 list = []
 list.append(Triangle())
-print(list.len)
+print(len(list))
 list.append(Pentagon())
 list.append(Hexagon())
 
