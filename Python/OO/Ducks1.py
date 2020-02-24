@@ -27,7 +27,7 @@ class RedHeadDuck(Duck):
         
 class RubberDucky(Duck):
     def quack(self):
-        print("Quack Quack")
+        print("Peep Peep")
     def fly(self):
         print("I'm flying")
 
@@ -37,5 +37,5 @@ list.append(RedHeadDuck())
 list.append(RubberDucky())
 
 for duck in list:
-    print (duck.quack(),duck.fly())
+    print (duck.quack())
 
