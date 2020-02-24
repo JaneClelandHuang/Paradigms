@@ -1,23 +1,27 @@
-import tkinter as tk
-root = tk.Tk()
- 
-class GeekforGeeks: 
-	geek = "" 
-
-	# default constructor 
-	def __init__(self): 
-		self.geek = "GeekforGeeks"
-        self.width = 240
-        self.height = 360
-		
-	# a method for printing data members 
-	def print_Geek(self): 
-		print(self.geek) 
-
-
-# creating object of the class 
-obj = GeekforGeeks() 
-
-# calling the instance method using the object obj 
-obj.print_Geek() 
-
+#definition of the class starts here  
+class Person:  
+    #initializing the variables  
+    name = ""  
+    age = 0  
+      
+    #defining constructor  
+    def __init__(self, personName, personAge):  
+        self.name = personName  
+        self.age = personAge  
+  
+    #defining class methods  
+    def showName(self):  
+        print(self.name)  
+  
+    def showAge(self):  
+        print(self.age)  
+          
+    #end of the class definition  
+  
+# Create an object of the class  
+person1 = Person("John", 23)  
+#Create another object of the same class  
+person2 = Person("Anne", 102)  
+#call member methods of the objects  
+person1.showAge()  
+person2.showName() 
