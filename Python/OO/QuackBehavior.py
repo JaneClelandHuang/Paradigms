@@ -10,13 +10,13 @@ class QuackBehavior(ABC):
         pass
         
 class Quack(QuackBehavior): 
-    def display(self):
+    def quack(self):
         print ("Quack, Quack")
     
 class Peep(QuackBehavior):
-    def display(self):
+    def quack(self):
         print ("Peep, Peep")
         
 class Mute(QuackBehavior):
-    def display(self):
+    def quack(self):
         print ("...")
