@@ -1,7 +1,8 @@
 # Python program showing 
 # abstract base class work 
+from abc import ABC, abstractmethod
 
-class Polygon(): 
+class Polygon(ABC): 
     # abstract method 
     def noofsides(self): 
         pass
