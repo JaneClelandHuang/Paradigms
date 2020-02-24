@@ -1,17 +1,16 @@
 from tkinter import * 
 root = Tk()
-canvas = Canvas(root, width=240, height=360)
-canvas.pack()
 
 #definition of the class starts here  
 class Grid():  
 
     #defining constructor  
-    def __init__(self, root, canvas, height=360, width=240): 
-        canvas = Canvas(root, width, height)
+    def __init__(self, root, canvas): 
+        self.height = 360 
+        self.width = 240 
+        canvas = Canvas(root, self.width, self.height)
         canvas.pack()	
-        self.height = height  
-        self.width = width  
+
         self.root = root
         self.canvas = canvas
 		
