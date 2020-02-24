@@ -9,7 +9,8 @@ class myClass:
     def showPosEvent(event):
         print('Widget=%s X=%s Y=%s' % (event.widget, event.x, event.y))
      
-    def onUpArrowKey(event): 
+    def onUpArrowKey(): 
+        widget = event.widget 
         print('Up arrow key pressed')
 
     def onDownArrowKey(event): 
