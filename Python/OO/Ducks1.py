@@ -24,7 +24,7 @@ class RedHeadDuck(Duck):
         print ("I'm a RedHeadDuck")
         
 class RubberDucky(Duck):
-    def displayx(self):
+    def display(self):
         print ("I'm just a RubberDucky")
 
     def quack(self):
