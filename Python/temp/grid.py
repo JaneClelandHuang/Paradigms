@@ -17,7 +17,9 @@ class Grid():
         # Creates all horizontal lines at intevals of 100
         for i in range(0, self.height+10, 10):
             canvas.create_line([(0, i), (self.width, i)], tag='grid_line')
-   
+        c = tk.Canvas(root, height=1000, width=1000, bg='white')
+        c.pack(fill=tk.BOTH, expand=True)
+
  
     #end of the class definition  
   
