@@ -16,7 +16,7 @@ def create_grid(event=None):
 
 root = tk.Tk()
 
-c = tk.Canvas(root, height=370, width=190, bg='white')
+c = tk.Canvas(root, height=360, width=180, bg='white')
 c.pack(fill=tk.BOTH, expand=True)
 
 c.bind('<Configure>', create_grid)
