@@ -4,7 +4,6 @@ root = Tk()
 
 class keyPresser():  
     def handle_down_key(self,event):
-        self.canvas = event.self.canvas
         self.canvas.focus_set() 
         self.canvas.move(self.rectangle,10,10)
         print('Down arrow key pressed')
@@ -13,7 +12,7 @@ class keyPresser():
         self.canvas = Canvas(root, width=400, height=400)
         self.rectangle = self.canvas.create_rectangle( 
             0, 0, 20, 20, fill = "black")
-        self.canvas.bind("<Down>", self.handle_down_key)
+        root.bind("<Down>", self.handle_down_key)
         self.canvas.focus()
         self.canvas.pack()
         print("Hello")
