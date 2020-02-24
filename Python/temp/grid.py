@@ -5,7 +5,7 @@ root = Tk()
 class Grid():  
 
     #defining constructor  
-    def __init__(self, root, canvas): 
+    def __init__(self, root): 
         self.height = 360 
         self.width = 240 
         canvas = Canvas(root, self.width, self.height)
@@ -27,5 +27,5 @@ class Grid():
     #end of the class definition  
   
 # Create an object of the class  
-grid = Grid()
+grid = Grid(root)
 root.mainloop()
