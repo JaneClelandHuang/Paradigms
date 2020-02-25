@@ -1,4 +1,4 @@
-import tkinter import Tk as tk, Canvas, Frame, BOTH
+from tkinter import Tk as tk, Canvas, Frame, BOTH
 
 class Grid:
     def __init__(self, master):
