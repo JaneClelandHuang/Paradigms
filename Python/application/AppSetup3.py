@@ -6,17 +6,26 @@ class Grid:
         self.master.title("Lines")
         self.height = 360 
         self.width = 240 
+        self.rectangle_size = 10
         self.canvas = tk.Canvas(width=self.width, height=self.height)
         self.drawGrid()
         self.canvas.pack()
+        self.placeMarker(3,4)
+        
     def drawGrid(self):
-        # Creates all vertical lines at intervals of 10
-        for i in range(0, self.width, 10):
+        # Creates all vertical lines at intervals of rectangle_size
+        for i in range(0, self.width, rectangle_size):
             self.canvas.create_line([(i, 0), (i, self.height)])
 
         # Creates all horizontal lines at intervals of 10
-        for i in range(0, self.height, 10):
+        for i in range(0, self.height, rectangle_size):
             self.canvas.create_line([(0, i), (self.width, i)])
+            
+    def placeMarker(self,x,y):
+        x1 = x * self.rectangle_size
+        y1 = y * self.rectangle_size
+        self.canvas.create_rectangle(x1,y1, x1+self.rectangle_size, y1+self.rectangle_size, fill="blue")
+        self.canvas.pack()
         
 class Window1:
     def __init__(self, master):
