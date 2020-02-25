@@ -11,11 +11,11 @@ class Grid:
         self.canvas.pack()
     def drawGrid(self):
         # Creates all vertical lines at intervals of 10
-        for i in range(0, self.width+10, 10):
+        for i in range(0, self.width, 10):
             self.canvas.create_line([(i, 0), (i, self.height)])
 
-        # Creates all horizontal lines at intervals of 100
-        for i in range(0, self.height+10, 10):
+        # Creates all horizontal lines at intervals of 10
+        for i in range(0, self.height, 10):
             self.canvas.create_line([(0, i), (self.width, i)])
         
 class Window1:
