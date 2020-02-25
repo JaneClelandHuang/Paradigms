@@ -7,7 +7,8 @@ class Grid:
         #self.canvas = tk.Canvas(self.master)
         self.height = 360 
         self.width = 240 
-        self.canvas = tk.Canvas(self.master)
+        #self.canvas = tk.Canvas(self.master)
+        self.canvas = tk.Canvas(width=800, height=1200)
         self.drawGrid()
         self.canvas.pack()
     def drawGrid(self):
