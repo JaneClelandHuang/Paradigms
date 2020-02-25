@@ -14,11 +14,11 @@ class Grid:
         
     def drawGrid(self):
         # Creates all vertical lines at intervals of rectangle_size
-        for i in range(0, self.width, rectangle_size):
+        for i in range(0, self.width, self.rectangle_size):
             self.canvas.create_line([(i, 0), (i, self.height)])
 
         # Creates all horizontal lines at intervals of 10
-        for i in range(0, self.height, rectangle_size):
+        for i in range(0, self.height, self.rectangle_size):
             self.canvas.create_line([(0, i), (self.width, i)])
             
     def placeMarker(self,x,y):
