@@ -22,8 +22,8 @@ class Grid:
             self.canvas.create_line([(0, i), (self.width, i)])
             
     def placeMarker(self,x,y):
-        x1 = x * self.rectangle_size
-        y1 = y * self.rectangle_size
+        x1 = (x-1) * self.rectangle_size
+        y1 = (y-1) * self.rectangle_size
         self.canvas.create_rectangle(x1,y1, x1+self.rectangle_size, y1+self.rectangle_size, fill="blue")
         self.canvas.pack()
         
