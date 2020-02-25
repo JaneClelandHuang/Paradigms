@@ -1,4 +1,4 @@
-from tkinter as tk
+import tkinter as tk
 
 class Grid:
     def __init__(self, master):
