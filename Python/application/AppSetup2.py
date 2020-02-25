@@ -9,7 +9,7 @@ class Window1:
         self.frame.pack()
     def new_window(self):
         self.newWindow = tk.Toplevel(self.master)
-        self.app = Demo2(self.newWindow)
+        self.app = Window2(self.newWindow)
 
 class Window2:
     def __init__(self, master):
