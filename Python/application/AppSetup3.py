@@ -10,7 +10,7 @@ class Grid:
         self.canvas.create_line(15, 25, 200, 25)
         self.canvas.create_line(300, 35, 300, 200, dash=(4, 2))
         self.canvas.create_line(55, 85, 155, 85, 105, 180, 55, 85)
-        self.canvas.pack(fill=BOTH, expand=1)
+        self.canvas.pack()
         
 class Window1:
     def __init__(self, master):
