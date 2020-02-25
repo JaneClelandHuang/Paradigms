@@ -6,7 +6,7 @@ class Grid:
         #self.frame = tk.Frame(self.master)
         self.master.title("Lines")
         #self.pack(fill=BOTH, expand=1)
-        self.canvas = Canvas(self)
+        self.canvas = tk.Canvas(self)
         self.canvas.create_line(15, 25, 200, 25)
         self.canvas.create_line(300, 35, 300, 200, dash=(4, 2))
         self.canvas.create_line(55, 85, 155, 85, 105, 180, 55, 85)
