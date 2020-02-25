@@ -2,7 +2,7 @@ import tkinter as tk
 
 class Grid:
     def __init__(self, master):
-        #self.master = master
+        self.master = master
         #self.frame = tk.Frame(self.master)
         self.master.title("Lines")
         self.pack(fill=BOTH, expand=1)
