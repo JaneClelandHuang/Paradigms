@@ -12,7 +12,6 @@ class Window1:
 class Window2:
     def __init__(self, master):
         #create buttons,entries,etc
-
     def button_method(self):
         #run this when button click to close window
         self.master.destroy()
