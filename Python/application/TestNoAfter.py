@@ -3,7 +3,7 @@ from tkinter import *
 
 def up():
     print("Up")
-    for x in range(0, 50000):
+    for x in range(0, 500000):
         print(x*x)
 
 def down():
