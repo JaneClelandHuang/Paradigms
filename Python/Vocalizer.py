@@ -1,5 +1,5 @@
 from subprocess import call
-from animals import Cow
+from Animals import Cow
 
 class Vocalizer:
     def vocalize(self):
