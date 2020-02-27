@@ -3,7 +3,7 @@ from Animals import Cow
 
 class Vocalizer:
     def vocalize(self):
-        cal(['say',self.name + 'says' + self.sound()])
+        call(['say',self.name + 'says' + self.sound()])
 		
 class VocalCow(Vocalizer, Cow):
     pass
