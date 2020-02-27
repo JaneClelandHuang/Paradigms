@@ -19,8 +19,8 @@ class B3(B6,B7):
         print("B3")
 		
 class B2(B4,B5):
-        print("B2")
     def speakX(self):
+        print("B2")
 		
 class B1(B2,B3):
     def speakX(self):
