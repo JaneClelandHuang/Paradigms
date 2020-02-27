@@ -8,6 +8,6 @@ class VocalCow(Vocalizer, Cow):
     pass
 
 c = VocalCow('Bessie')
-print(c.speak())    # speak is in both classes!
-c.speak()           
+c.speak()    # speak is in both classes!
+          
 
