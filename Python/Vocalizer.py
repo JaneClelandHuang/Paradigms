@@ -1,9 +1,8 @@
-from subprocess import call
 from Animals import Cow
 
 class Vocalizer:
     def vocalize(self):
-        call(['say',self.name + 'says' + self.sound()])
+        print("Vocalizing cow sound here")
 		
 class VocalCow(Vocalizer, Cow):
     pass
