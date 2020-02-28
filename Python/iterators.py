@@ -16,3 +16,5 @@ for k in {'x':1, 'y':2, 'z':3}:   #keys of a dictionary
 with open('colors') as f: 
     for line in f:  
         print(line.strip())  #lines of a file
+        
+        

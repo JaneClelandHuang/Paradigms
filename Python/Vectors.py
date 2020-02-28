@@ -26,3 +26,4 @@ assert u.j == 4
 assert u.magnitude() == 5.0 
 assert str(u + v) == '<-2,14>' 
 assert u * v == 25
+
