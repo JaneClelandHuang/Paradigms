@@ -10,6 +10,7 @@ for i in powers_of_two(70):
 
 # Explore the mechanism 
 g = powers_of_two(100) 
+print str(type(powers_of_two))
 assert str(type(powers_of_two)) == "< class 'function'>" 
 assert str(type(g)) == "<class 'generator'>" 
 assert g.__next__() == 1 
