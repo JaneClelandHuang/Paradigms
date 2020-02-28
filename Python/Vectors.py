@@ -9,7 +9,8 @@ class Vector:
         return math.sqrt(self.i * self.i + self.j * self.j) 
 
     def __add__(self, v): 
-      return Vector(self.i + v.i, self.j + v.j) 
+        print("Adding now")    
+        return Vector(self.i + v.i, self.j + v.j) 
 
     def __mul__(self, v): 
         return self.i * v.i + self.j * v.j 
@@ -20,9 +21,6 @@ class Vector:
 u = Vector(3,4)
 v = Vector(-5,10)
 
-print(u)
-print(i)
-print(u.i)
 assert u.i == 3 
 assert u.j == 4 
 assert u.magnitude() == 5.0 
