@@ -16,3 +16,4 @@ assert g.__next__() == 1
 assert g.__next__() == 2 
 assert next(g) == 4 
 assert next(g) == 8 
+
