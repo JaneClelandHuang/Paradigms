@@ -9,8 +9,8 @@ class OneTwoThree:
                 if value > 3: 
                     raise StopIteration() 
                 return value 
-        return OneTwoThreeIterator() 
+        return OneTwoThreeIterator()
 
-x = OneTwoThree() 
+x = OneTwoThree()
     for i in x:
         print(i) 
