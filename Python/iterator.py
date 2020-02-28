@@ -12,5 +12,5 @@ class OneTwoThree:
         return OneTwoThreeIterator()
 
 x = OneTwoThree()
-    for i in x:
-        print(i) 
+for i in x:
+    print(i) 
