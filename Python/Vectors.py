@@ -21,6 +21,7 @@ u = Vector(3,4)
 v = Vector(-5,10)
 
 print(u)
+print(i)
 print(u.i)
 assert u.i == 3 
 assert u.j == 4 
