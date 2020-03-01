@@ -3,6 +3,7 @@ from CompositePattern import *
 class Book(Composite):
     def __init__(self,bookTitle):
         self.bookTitle = bookTitle
+        super()
     def performOperation(self):
         print("\n"+self.bookTitle)
         
@@ -14,6 +15,7 @@ class FrontMatter(Leaf):
 class Chapter(Composite):
     def __init__(self,chapterTitle):
         self.chapterTitle = chapterTitle
+        super()
     def performOperation(self):
         print("\n" + self.chapterTitle)
         print("Chapter content here")
@@ -26,6 +28,7 @@ class Figure(Leaf):
     def __init__(self,caption,imageName):
         self.caption = caption
         self.imageName = imageName
+        super()
     def performOperation():
         print(self.caption)
         print(self.imageName + " Image displayed here")    

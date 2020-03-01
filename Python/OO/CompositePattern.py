@@ -12,6 +12,7 @@ class Leaf(Component): # Strictly speaking, unnecessary
 class Composite(Component):
     def __init__(self):
         self.children = []
+        super()
         
     def performOperation(self):
         for child in self.children:
