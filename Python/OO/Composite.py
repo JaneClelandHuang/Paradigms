@@ -30,7 +30,6 @@ class Chapter(Book):
 
 class Paragraph(Chapter):
     def __init__(self):
-        self.chapterNumber = chapterNumber
         self.title()
         self.content()
     def title(self):
