@@ -16,7 +16,6 @@ class FrontMatter(Book):
     def title(self):
         print("Front Matter")
     def content(self):
-        print(self.bookTitle)
         print("ISBN: XXXXXXX")
 
 class Chapter(Book):   
