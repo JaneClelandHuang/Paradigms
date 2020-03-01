@@ -15,6 +15,7 @@ class Composite(Component):
         super().__init__()
         
     def performOperation(self):
+        print("PERFORMING OPERATION ON COMPOSITE")
         for child in self.children:
             child.performOperation()
          
