@@ -9,7 +9,6 @@ class Book(Composite):
         
 class FrontMatter(Leaf):
     def __init__(self):
-        print("Front matter constructor called")
         super().__init__()
     def printContent(self):
         print("Front Matter")
@@ -27,7 +26,7 @@ class Paragraph(Leaf):
     def __init__(self):
         super().__init__()
     def printContent(self):
-        print("Content for the chapter goes here.")
+        print("Paragraph text here.")
 
 class Figure(Leaf):
     def __init__(self,caption,imageName):
@@ -41,8 +40,8 @@ class Figure(Leaf):
 
 # Build the book content
 book = Book("Programming Paradigms")
-frontMatter = FrontMatter()
-book.add(frontMatter)
+
+book.add(FrontMatter())
 chapter = Chapter("Chapter 1: JavaScript")
 book.add(chapter)
 chapter.add(Paragraph())
@@ -50,6 +49,7 @@ chapter.add(Paragraph())
 chapter.add(Figure("JavaScript image","Javascript Timeline"))
 
 chapter2 = (Chapter("Chapter 2: Python"))
+book.add(chapter2)
 chapter2.add(Paragraph())
 chapter2.add(Paragraph())
 chapter2.add(Figure("Python Image","Python Timeline"))
