@@ -4,7 +4,7 @@ class Component(ABC):
     def performOperation(self): 
         pass
 
-class Leaf(Component): # Strictly speaking, unnecessary
+class Leaf(Component,ABC): # Strictly speaking, unnecessary
     def performOperation(self):
         pass
 
@@ -12,7 +12,6 @@ class Leaf(Component): # Strictly speaking, unnecessary
 class Composite(Component):
     def __init__(self):
         self.children = []
-        print("I'm called")
         super().__init__()
         
     def performOperation(self):
