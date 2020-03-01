@@ -19,7 +19,7 @@ class FrontMatter(Leaf):
 class Chapter(Composite):
     def __init__(self,chapterTitle):
         self.chapterTitle = chapterTitle
-        super().__init__(
+        super().__init__()
     def performOperation(self):
         print("\n" + self.chapterTitle)
         print("Chapter content here")
