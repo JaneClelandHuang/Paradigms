@@ -1,15 +1,15 @@
 from abc import ABC, abstractmethod
 
-def Component(ABC):
+class Component(ABC):
     def performOperation(self): 
         pass
 
-def Leaf(ABC,Component): # Strictly speaking, unnecessary
+class Leaf(ABC,Component): # Strictly speaking, unnecessary
     def performOperation(self):
         pass
 
 
-def Composite(ABC,Component):
+class Composite(ABC,Component):
     def __init__(self):
         self.children = []
         
