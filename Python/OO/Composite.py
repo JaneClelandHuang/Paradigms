@@ -24,7 +24,7 @@ class Chapter(Book):
         self.title()
         self.content()
     def title(self):
-        print("\nChapter: " + self.chapterTitle)
+        print("\n" + self.chapterTitle)
     def content(self):
         print("Chapter content here")
 
