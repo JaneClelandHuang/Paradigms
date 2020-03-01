@@ -19,6 +19,8 @@ class Composite(Component):
         
     def performOperation(self):
         self.printContent() # Print content first
+        print("Length of list")
+        print(len(self.children))
         for child in self.children:  # Ask children to print content
             child.performOperation()
          
