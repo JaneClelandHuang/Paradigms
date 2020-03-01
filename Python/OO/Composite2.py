@@ -2,6 +2,7 @@ from CompositePattern import *
       
 class Book(Composite):
     def __init__(self,bookTitle):
+        print("Book constructor called")
         self.bookTitle = bookTitle
         super()
     def performOperation(self):
@@ -36,7 +37,8 @@ class Figure(Leaf):
 
 # Build the book content
 book = Book("Programming Paradigms")
-book.add(FrontMatter())
+frontMatter = FrontMatter()
+book.add(frontMatter)
 #chapter = Chapter("Chapter 1: JavaScript")
 #book.add(chapter)
 #chapter.add(Paragraph())
