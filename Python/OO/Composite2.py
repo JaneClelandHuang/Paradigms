@@ -50,9 +50,10 @@ chapter.add(Paragraph())
 chapter.add(Paragraph())
 chapter.add(Figure("JavaScript image","Javascript Timeline"))
 
-#chapter2 = (Chapter("Chapter 2: Python"))
-#chapter2.add(Paragraph())
-#chapter2.add(Paragraph())
-#chapter2.add(Figure("Python Image","Python Timeline"))
+chapter2 = (Chapter("Chapter 2: Python"))
+chapter2.add(Paragraph())
+chapter2.add(Paragraph())
+chapter2.add(Figure("Python Image","Python Timeline"))
 
 # Now print it
+book.performOperation()

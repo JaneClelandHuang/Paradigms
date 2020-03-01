@@ -20,8 +20,6 @@ class Composite(Component):
             child.performOperation()
          
     def add(self,childComponent):
-        #if(childComponent
-        print(type(childComponent))
         self.children.append(childComponent)
         
     def remove(self,childComponent):
