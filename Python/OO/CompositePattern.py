@@ -11,7 +11,7 @@ def Leaf(ABC,Component): # Strictly speaking, unnecessary
 
 def Composite(ABC,Component):
     def __init__(self):
-        self.children = list[]
+        self.children = []
         
     def performOperation(self):
         for child in self.children:
