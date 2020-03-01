@@ -19,12 +19,14 @@ class FrontMatter(Leaf):
 class Chapter(Composite):
     def __init__(self,chapterTitle):
         self.chapterTitle = chapterTitle
-        super()
+        super().__init__(
     def performOperation(self):
         print("\n" + self.chapterTitle)
         print("Chapter content here")
 
 class Paragraph(Leaf):
+    def __init__(self):
+        super().__init__()
     def performOperation(self):
         print("Content for the chapter goes here.")
 
@@ -42,11 +44,11 @@ class Figure(Leaf):
 book = Book("Programming Paradigms")
 frontMatter = FrontMatter()
 book.add(frontMatter)
-#chapter = Chapter("Chapter 1: JavaScript")
-#book.add(chapter)
-#chapter.add(Paragraph())
-#chapter.add(Paragraph())
-#chapter.add(Figure("JavaScript image","Javascript Timeline"))
+chapter = Chapter("Chapter 1: JavaScript")
+book.add(chapter)
+chapter.add(Paragraph())
+chapter.add(Paragraph())
+chapter.add(Figure("JavaScript image","Javascript Timeline"))
 
 #chapter2 = (Chapter("Chapter 2: Python"))
 #chapter2.add(Paragraph())
