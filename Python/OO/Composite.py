@@ -11,7 +11,8 @@ class Book(ABC):
         
 class FrontMatter(Book):
     def __init__(self):
-        pass
+        self.title()
+        self.content()
     def title(self):
         print("Front Matter")
     def content(self):
