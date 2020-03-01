@@ -28,7 +28,7 @@ class Paragraph(Chapter):
         print("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
 
 class Figure(Chapter):
-    def title(caption)
+    def title(caption):
         self.caption = caption
         print(self.caption)
     def content(imageName):
