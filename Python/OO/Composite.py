@@ -40,7 +40,7 @@ class Paragraph(Chapter):
 class Figure(Chapter):
     def __init__(self,caption,imageName):
         self.caption = caption
-        self.imageName = imageName()
+        self.imageName = imageName
         self.title()
         self.content()
     def title(self,caption):
