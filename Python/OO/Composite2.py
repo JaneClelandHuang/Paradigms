@@ -34,7 +34,7 @@ class Figure(Leaf):
 
 # Build the book content
 book = Book("Programming Paradigms")
-book.add(FrontMatter()
+book.add(FrontMatter())
 chapter = Chapter("Chapter 1: JavaScript")
 book.add(chapter)
 chapter.add(Paragraph())
