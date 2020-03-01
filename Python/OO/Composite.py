@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 class Book(ABC):
-    def __init__(self,title):
+    def __init__(self,bookTitle):
         self.bookTitle = bookTitle
         self.title()
     def title(self):
