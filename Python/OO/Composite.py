@@ -39,7 +39,6 @@ class Figure(Chapter):
         print(self.caption)
         print(self.imageName + " Image displayed here")    
 
-
 # Build the book content
 bookContent = []
 bookContent.append(Book("Programming Paradigms"))
