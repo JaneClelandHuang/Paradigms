@@ -21,8 +21,8 @@ class FrontMatter(Book):
 class Chapter(Book):   
     def __init__(self,chapterTitle):
         self.chapterTitle = chapterTitle
-        self.bookTitle = bookTitle
         self.title()
+        self.content()
     def title(self):
         print("Chapter: " + self.chapterTitle)
     def content(self):
