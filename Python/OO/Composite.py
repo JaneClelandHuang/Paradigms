@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 class Book(ABC):
-    def __init__(title):
+    def __init__(self,title):
         self.bookTitle = bookTitle
         self.title()
     def title(self):
@@ -18,8 +18,7 @@ class FrontMatter(Book):
         print(self.bookTitle)
         print("ISBN: XXXXXXX")
 
-class Chapter(Book):
-    
+class Chapter(Book):   
     def title(self,chapterTitle):
         print("Chapter: " + chapterTitle)
     def content(self):
