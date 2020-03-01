@@ -43,7 +43,7 @@ class Figure(Chapter):
         self.imageName = imageName
         self.title()
         self.content()
-    def title(self,caption):
+    def title(self):
         print(self.caption)
     def content(self):
         print(self.imageName + " Image displayed here")    
