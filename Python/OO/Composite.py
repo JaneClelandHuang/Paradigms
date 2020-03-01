@@ -58,3 +58,9 @@ chapter2 = Chapter("Chapter 2: Python")
 paragraph3 = Paragraph()
 paragraph4 = Paragraph()
 figure1 = Figure("Python Image","Python Timeline")
+
+# Reprint
+book.title()
+frontMatter.title()
+frontMatter.content()
+#etc
