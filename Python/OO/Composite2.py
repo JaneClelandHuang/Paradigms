@@ -12,7 +12,7 @@ class FrontMatter(Leaf):
         print("Front Matter")
         print("ISBN: XXXXXXX")
 
-class Chapter(Composite):   
+class Chapter(Composite):
     def __init__(self,chapterTitle):
         self.chapterTitle = chapterTitle
     def performOperation(self):
@@ -35,7 +35,7 @@ class Figure(Leaf):
 # Build the book content
 book = Book("Programming Paradigms")
 book.add(FrontMatter()
-chapter = (Chapter("Chapter 1: JavaScript"))
+chapter = Chapter("Chapter 1: JavaScript")
 book.add(chapter)
 chapter.add(Paragraph())
 chapter.add(Paragraph())
