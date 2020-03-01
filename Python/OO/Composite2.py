@@ -36,16 +36,16 @@ class Figure(Leaf):
 
 # Build the book content
 book = Book("Programming Paradigms")
-book.add(FrontMatter())
-chapter = Chapter("Chapter 1: JavaScript")
-book.add(chapter)
-chapter.add(Paragraph())
-chapter.add(Paragraph())
-chapter.add(Figure("JavaScript image","Javascript Timeline"))
+#book.add(FrontMatter())
+#chapter = Chapter("Chapter 1: JavaScript")
+#book.add(chapter)
+#chapter.add(Paragraph())
+#chapter.add(Paragraph())
+#chapter.add(Figure("JavaScript image","Javascript Timeline"))
 
-chapter2 = (Chapter("Chapter 2: Python"))
-chapter2.add(Paragraph())
-chapter2.add(Paragraph())
-chapter2.add(Figure("Python Image","Python Timeline"))
+#chapter2 = (Chapter("Chapter 2: Python"))
+#chapter2.add(Paragraph())
+#chapter2.add(Paragraph())
+#chapter2.add(Figure("Python Image","Python Timeline"))
 
 # Now print it
