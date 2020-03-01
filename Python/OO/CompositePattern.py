@@ -4,12 +4,12 @@ class Component(ABC):
     def performOperation(self): 
         pass
 
-class Leaf(ABC,Component): # Strictly speaking, unnecessary
+class Leaf(Component): # Strictly speaking, unnecessary
     def performOperation(self):
         pass
 
 
-class Composite(ABC,Component):
+class Composite(Component):
     def __init__(self):
         self.children = []
         
