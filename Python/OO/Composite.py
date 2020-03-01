@@ -1,37 +1,36 @@
 from abc import ABC, abstractmethod
 
 class Book(ABC):
-    def __init__(self,bookTitle):
+    def title(self,title):
         self.bookTitle = bookTitle
-    def title():
         print("I am the book")
-    def content():
+    def content(self):
         pass
         
 class FrontMatter(Book):
-    def title():
+    def title(self):
         print("Front Matter")
-    def content():
+    def content(self):
         print(self.bookTitle)
         print("ISBN: XXXXXXX")
 
 class Chapter(Book):
-    def title(chapterTitle):
+    def title(self,chapterTitle):
         print("Chapter: " + chapterTitle)
-    def content():
+    def content(self):
         print("Chapter content here")
 
 class Paragraph(Chapter):
-    def title():
+    def title(self):
         pass
-    def content():
+    def content(self):
         print("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
 
 class Figure(Chapter):
-    def title(caption):
+    def title(self,caption):
         self.caption = caption
         print(self.caption)
-    def content(imageName):
+    def content(self,imageName):
         print(imageName + " Image displayed here")    
 
 book = Book("Programming Paradigms")
