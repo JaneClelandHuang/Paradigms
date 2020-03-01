@@ -30,6 +30,7 @@ class Chapter(Book):
 
 class Paragraph(Chapter):
     def __init__(self):
+        self.chapterNumber = chapterNumber
         self.title()
         self.content()
     def title(self):
@@ -50,11 +51,11 @@ class Figure(Chapter):
 
 book = Book("Programming Paradigms")
 frontMatter = FrontMatter()
-chapter1 = Chapter("JavaScript")
+chapter1 = Chapter("Chapter 1: JavaScript")
 paragraph1 = Paragraph()
 paragraph2 = Paragraph()
 figure1 = Figure("JavaScript image","Javascript Timeline")
-chapter2 = Chapter("Python")
+chapter2 = Chapter("Chapter 2: Python")
 paragraph3 = Paragraph()
 paragraph4 = Paragraph()
 figure1 = Figure("Python Image","Python Timeline")
