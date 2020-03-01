@@ -34,7 +34,7 @@ class Figure(Leaf):
         self.caption = caption
         self.imageName = imageName
         super().__init__()
-    def printContent():
+    def printContent(self):
         print(self.caption)
         print(self.imageName + " Image displayed here")    
 
