@@ -1,13 +1,17 @@
 from abc import ABC, abstractmethod
 
 class Book(ABC):
-    def title(self,title):
+    def __init__(title):
         self.bookTitle = bookTitle
-        print("I am the book")
+        self.title()
+    def title(self):
+        print(self.bookTitle)
     def content(self):
         pass
         
 class FrontMatter(Book):
+    def __init__():
+        pass
     def title(self):
         print("Front Matter")
     def content(self):
@@ -15,6 +19,7 @@ class FrontMatter(Book):
         print("ISBN: XXXXXXX")
 
 class Chapter(Book):
+    
     def title(self,chapterTitle):
         print("Chapter: " + chapterTitle)
     def content(self):
@@ -35,11 +40,11 @@ class Figure(Chapter):
 
 book = Book("Programming Paradigms")
 frontMatter = FrontMatter()
-chapter1 = Chapter("Java Script")
-paragraph1 = Paragraph()
-paragraph2 = Paragraph()
-figure1 = Figure("Java Script timeline")
-chapter2 = Chapter("Python")
-paragraph3 = Paragraph()
-paragraph4 = Paragraph()
-figure1 = Figure("Python Timeline")
+#chapter1 = Chapter("Java Script")
+#paragraph1 = Paragraph()
+#paragraph2 = Paragraph()
+#figure1 = Figure("Java Script timeline")
+#chapter2 = Chapter("Python")
+#paragraph3 = Paragraph()
+#paragraph4 = Paragraph()
+#figure1 = Figure("Python Timeline")
