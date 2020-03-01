@@ -1,6 +1,5 @@
-from abc import ABC, abstractmethod
 from CompositePattern import *
-
+      
 class Book(Composite):
     def __init__(self,bookTitle):
         self.bookTitle = bookTitle
