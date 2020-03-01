@@ -13,7 +13,7 @@ class Composite(Component):
     def __init__(self):
         self.children = []
         print("I'm called")
-        super()
+        super().__init__()
         
     def performOperation(self):
         for child in self.children:

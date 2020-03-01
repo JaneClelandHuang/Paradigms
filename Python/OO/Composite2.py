@@ -4,14 +4,14 @@ class Book(Composite):
     def __init__(self,bookTitle):
         print("Book constructor called")
         self.bookTitle = bookTitle
-        super()
+        super().__init__()
     def performOperation(self):
         print("\n"+self.bookTitle)
         
 class FrontMatter(Leaf):
     def __init__(self):
         print("Front matter constructor called")
-        super()
+        super().__init__()
     def performOperation(self):
         print("Front Matter")
         print("ISBN: XXXXXXX")
@@ -32,7 +32,7 @@ class Figure(Leaf):
     def __init__(self,caption,imageName):
         self.caption = caption
         self.imageName = imageName
-        super()
+        super().__init__()
     def performOperation():
         print(self.caption)
         print(self.imageName + " Image displayed here")    
