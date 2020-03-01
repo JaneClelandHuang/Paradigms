@@ -66,16 +66,16 @@ frontMatter.content()
 #etc
 
 bookContent = []
-bookContent.replace(Book("Programming Paradigms"))
-bookContent.replace(FrontMatter())
-bookContent.replace(Chapter("Chapter 1: JavaScript"))
-bookContent.replace(Paragraph())
-bookContent.replace(Paragraph())
-bookContent.replace(Figure("JavaScript image","Javascript Timeline"))
-bookContent.replace(Chapter("Chapter 2: Python"))
-bookContent.replace(Paragraph())
-bookContent.replace(Paragraph())
-bookContent.replace(Figure("Python Image","Python Timeline"))
+bookContent.append(Book("Programming Paradigms"))
+bookContent.append(FrontMatter())
+bookContent.append(Chapter("Chapter 1: JavaScript"))
+bookContent.append(Paragraph())
+bookContent.append(Paragraph())
+bookContent.append(Figure("JavaScript image","Javascript Timeline"))
+bookContent.append(Chapter("Chapter 2: Python"))
+bookContent.append(Paragraph())
+bookContent.append(Paragraph())
+bookContent.append(Figure("Python Image","Python Timeline"))
 
 for element in bookContent:
     element.title()
