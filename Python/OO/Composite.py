@@ -10,7 +10,7 @@ class Book(ABC):
         pass
         
 class FrontMatter(Book):
-    def __init__():
+    def __init__(self):
         pass
     def title(self):
         print("Front Matter")
