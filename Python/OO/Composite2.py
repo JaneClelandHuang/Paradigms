@@ -6,6 +6,8 @@ class Book(Composite):
         super().__init__()
     def printContent(self):
         print("\n"+self.bookTitle)
+    def printBook(self):
+        performOperation()
         
 class FrontMatter(Leaf):
     def __init__(self):
@@ -55,4 +57,4 @@ chapter2.add(Paragraph())
 chapter2.add(Figure("Python Image","Python Timeline"))
 
 # Now print it
-book.printContent()
+book.printBook()
