@@ -2,17 +2,16 @@ from CompositePattern import *
       
 class Book(Composite):
     def __init__(self,bookTitle):
-        print("Book constructor called")
         self.bookTitle = bookTitle
         super().__init__()
-    def performOperation(self):
+    def printContent(self):
         print("\n"+self.bookTitle)
         
 class FrontMatter(Leaf):
     def __init__(self):
         print("Front matter constructor called")
         super().__init__()
-    def performOperation(self):
+    def printContent(self):
         print("Front Matter")
         print("ISBN: XXXXXXX")
 
@@ -20,14 +19,14 @@ class Chapter(Composite):
     def __init__(self,chapterTitle):
         self.chapterTitle = chapterTitle
         super().__init__()
-    def performOperation(self):
+    def printContent(self):
         print("\n" + self.chapterTitle)
         print("Chapter content here")
 
 class Paragraph(Leaf):
     def __init__(self):
         super().__init__()
-    def performOperation(self):
+    def printContent(self):
         print("Content for the chapter goes here.")
 
 class Figure(Leaf):
@@ -35,7 +34,7 @@ class Figure(Leaf):
         self.caption = caption
         self.imageName = imageName
         super().__init__()
-    def performOperation():
+    def printContent():
         print(self.caption)
         print(self.imageName + " Image displayed here")    
 
@@ -56,4 +55,4 @@ chapter2.add(Paragraph())
 chapter2.add(Figure("Python Image","Python Timeline"))
 
 # Now print it
-book.performOperation()
+book.printContent()

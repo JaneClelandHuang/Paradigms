@@ -4,19 +4,22 @@ class Component(ABC):
     def performOperation(self): 
         pass
 
+    @abstractmethod
+    def printContent(self):
+        pass
+
 class Leaf(Component,ABC): # Strictly speaking, unnecessary
     def performOperation(self):
-        print("PRINTING NOTHING MUCH")
-
-
+        self.printContent()
+   
 class Composite(Component):
     def __init__(self):
         self.children = []
         super().__init__()
         
     def performOperation(self):
-        print("PERFORMING OPERATION ON COMPOSITE")
-        for child in self.children:
+        self.printContent() # Print content first
+        for child in self.children:  # Ask children to print content
             child.performOperation()
          
     def add(self,childComponent):
