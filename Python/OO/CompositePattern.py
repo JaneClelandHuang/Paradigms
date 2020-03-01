@@ -23,7 +23,7 @@ class Composite(Component):
             child.performOperation()
          
     def add(self,childComponent):
-        print("Adding a child: " + type(childComponent) + " to " + type(self))
+        print("Adding a child: " + type(childComponent).__name__ + " to " + type(self).__name__)
         self.children.append(childComponent)
         
     def remove(self,childComponent):
