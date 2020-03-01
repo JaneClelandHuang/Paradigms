@@ -6,7 +6,7 @@ class Component(ABC):
 
 class Leaf(Component,ABC): # Strictly speaking, unnecessary
     def performOperation(self):
-        pass
+        print("PRINTING NOTHING MUCH")
 
 
 class Composite(Component):
