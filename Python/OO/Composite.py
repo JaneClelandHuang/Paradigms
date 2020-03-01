@@ -5,7 +5,7 @@ class Book(ABC):
         self.bookTitle = bookTitle
         self.title()
     def title(self):
-        print("\n" + self.bookTitle)
+        print(self.bookTitle)
     def content(self):
         pass
         
@@ -24,7 +24,7 @@ class Chapter(Book):
         self.title()
         self.content()
     def title(self):
-        print("Chapter: " + self.chapterTitle)
+        print("\n Chapter: " + self.chapterTitle)
     def content(self):
         print("Chapter content here")
 
