@@ -9,6 +9,9 @@ class Book(Composite):
         print("\n"+self.bookTitle)
         
 class FrontMatter(Leaf):
+    def __init__(self):
+        print("Front matter constructor called")
+        super()
     def performOperation(self):
         print("Front Matter")
         print("ISBN: XXXXXXX")
