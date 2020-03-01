@@ -8,7 +8,7 @@ class Component(ABC):
     def printContent(self):
         pass
 
-class Leaf(Component,ABC): # Strictly speaking, unnecessary
+class Leaf(Component): 
     def performOperation(self):
         self.printContent()
    
@@ -19,13 +19,10 @@ class Composite(Component):
         
     def performOperation(self):
         self.printContent() # Print content first
-        print("Length of list")
-        print(len(self.children))
         for child in self.children:  # Ask children to print content
             child.performOperation()
          
     def add(self,childComponent):
-        print("Adding a child: " + type(childComponent).__name__ + " to " + type(self).__name__)
         self.children.append(childComponent)
         
     def remove(self,childComponent):
