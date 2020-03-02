@@ -16,7 +16,7 @@ class IteratorGoof():
            animal = None
         return animal
         
-    def __next__(self):
+    def __nextQ__(self):
         try:
            animal = self.animals[self.position]
            self.position= self.position+1
