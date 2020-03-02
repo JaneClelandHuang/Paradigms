@@ -12,3 +12,9 @@ class Count:
         num = self.num
         self.num += 1
         return num
+
+
+c = Count()
+print(next(c))
+print(next(c))
+print(next(c))
