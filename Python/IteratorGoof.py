@@ -8,7 +8,7 @@ class IteratorGoof():
         return self
         
     def removeTurkey(self):
-        self.animals.remove("Turkey")
+        self.animals.remove("turkey")
 
     def __next__(self):
         if (self.position < len(self.animals)):
