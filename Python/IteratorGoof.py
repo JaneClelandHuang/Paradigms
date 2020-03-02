@@ -11,7 +11,7 @@ class IteratorGoof():
 
     def __next__(self):
         animal = self.animals[self.position]
-        self.position++
+        self.position= self.position+1
         return animal
 
 ig = IteratorGoof()
