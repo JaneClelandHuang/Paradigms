@@ -12,18 +12,9 @@ class IteratorGoof():
            animal = self.animals[self.position]
            self.position= self.position+1
         else:
-           raise StopIteration() 
-           animal = None
+            animal = None
         return animal
         
-    def __nextQ__(self):
-        try:
-           animal = self.animals[self.position]
-           self.position= self.position+1
-        except StopIteration:
-           print("No more items")
-           return None
-
 ig = IteratorGoof()
 print(next(ig))
 print(next(ig))
