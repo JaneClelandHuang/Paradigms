@@ -15,8 +15,8 @@ class IteratorGoof():
         return animal
 
 ig = IteratorGoof()
-next(ig)
-next(ig)
-next(ig)
-next(ig)
-next(ig)
+print(next(ig))
+print(next(ig))
+print(next(ig))
+print(next(ig))
+print(next(ig))
