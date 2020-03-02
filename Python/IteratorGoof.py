@@ -3,7 +3,7 @@ class IteratorGoof():
     #Iterator that counts upward forever.
 
     def __init__(self):
-        self.animals = ["cat","dog","turkey","camel","giraffe']
+        self.animals = ["cat","dog","turkey","camel","giraffe"]
         self.position = 0
 
     def __iter__(self):
