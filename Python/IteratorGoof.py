@@ -7,11 +7,12 @@ class IteratorGoof():
     def __iter__(self):
         return self
 
-    def __nextQ__(self):
-        if (self.position < len(self.animals)):
+    def __next__(self):
+        if (self.position < len(self.animals)-1):
            animal = self.animals[self.position]
            self.position= self.position+1
         else:
+           raise StopIteration() 
            animal = None
         return animal
         
@@ -30,3 +31,4 @@ print(next(ig))
 print(next(ig))
 print(next(ig))
 print(next(ig))
+print("Continue anyway")
