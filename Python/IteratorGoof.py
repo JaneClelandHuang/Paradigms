@@ -10,8 +10,11 @@ class IteratorGoof():
         return self
 
     def __next__(self):
-        animal = self.animals[self.position]
-        self.position= self.position+1
+        if (self.position < len(self.animals):
+           animal = self.animals[self.position]
+           self.position= self.position+1
+        else:
+           animal = None
         return animal
 
 ig = IteratorGoof()
