@@ -11,6 +11,8 @@ def generatePermutations(a, n)
     end 
 end 
 
+puts ARGV
+
 if ARGV.length != 1 
     STDERR.puts 'Exactly one argument is required' 
     exit 1 
