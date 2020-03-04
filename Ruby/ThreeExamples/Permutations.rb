@@ -18,6 +18,6 @@ if ARGV.length != 1
     exit 1 
 end 
 %generatePermutations ARGV[0].chars, ARGV[0].length-1 
-ARGC[0].chars.permutation.each{|s| puts s.join}
+ARGV[0].chars.permutation.each{|s| puts s.join}
 
 
