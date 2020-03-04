@@ -1,6 +1,7 @@
-strings = ["one", "two", "four", "five"]
-strings.inject(0) do |sum, str|
-    #next if str.size == 4
-    #sum + str.size
-	next sum if str.size == 4
+$i = 0
+$num = 5
+
+while $i < $num  do
+   puts("Inside the loop i = #$i" )
+   $i +=1
 end
