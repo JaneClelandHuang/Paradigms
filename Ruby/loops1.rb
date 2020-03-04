@@ -16,3 +16,17 @@ while i <= 5
 	i = i + 1
 end
 
+# Example 3: each_index
+employees = ['Joe', 'Charlie', 'Fred', 'Reeve']
+
+employees.each_index do |i|
+	puts i + 1 #Output 1 to 4
+end
+
+# Example 4: 
+5.times do |i|
+	puts i
+end
+
+
+
