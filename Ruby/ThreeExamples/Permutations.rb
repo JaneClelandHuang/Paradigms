@@ -11,13 +11,11 @@ def generatePermutations(a, n)
     end 
 end 
 
-STDERR.puts ARGV
-
 if ARGV.length != 1 
     STDERR.puts 'Exactly one argument is required' 
     exit 1 
 end 
-%generatePermutations ARGV[0].chars, ARGV[0].length-1 
-ARGV[0].chars.permutation.each{|s| puts s.join}
+generatePermutations ARGV[0].chars, ARGV[0].length-1 
+
 
 
