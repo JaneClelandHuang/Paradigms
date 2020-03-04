@@ -17,6 +17,7 @@ if ARGV.length != 1
     STDERR.puts 'Exactly one argument is required' 
     exit 1 
 end 
-generatePermutations ARGV[0].chars, ARGV[0].length-1 
+%generatePermutations ARGV[0].chars, ARGV[0].length-1 
+ARGV[0].chars.permutation.each{|s| puts s.join}
 
 
