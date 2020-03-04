@@ -1,9 +1,18 @@
-# Example 1
+# Example 1: until loop
+puts "Example 1"
 i = 1 #Variable for iteration called 'i' which starts at 1
 
-until i > 5 #Until we've gone over 5
+until i > 5 
 	puts i #Output the loop count
-	i = i + 1 #Add one to the loop count
-end #End the loop
+	i = i + 1 
+end 
 
+# Example 2: do while loop
+puts "Example 2"
+i = 1
+
+do
+	puts i
+	i = i + 1
+end while i <= 5
 
