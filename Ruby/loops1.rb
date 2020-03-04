@@ -11,8 +11,8 @@ end
 puts "Example 2"
 i = 1
 
-loop do
+while i <= 5
 	puts i
 	i = i + 1
-end while i <= 5
+end
 
