@@ -17,6 +17,7 @@ while i <= 5
 end
 
 # Example 3: each_index
+puts "Example 3"
 employees = ['Joe', 'Charlie', 'Fred', 'Reeve']
 
 employees.each_index do |i|
@@ -24,6 +25,7 @@ employees.each_index do |i|
 end
 
 # Example 4: 
+puts "Example 4"
 5.times do |i|
 	puts i
 end
