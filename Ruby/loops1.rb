@@ -1,14 +1,3 @@
-# Example 1: until loop
-puts "Example 1"
-i = 1 #Variable for iteration called 'i' which starts at 1
-
-until i > 5 
-	puts i #Output the loop count
-	i = i + 1 
-end 
-
-# Example 2: do while loop
-puts "Example 2"
 i = 1
 
 do
