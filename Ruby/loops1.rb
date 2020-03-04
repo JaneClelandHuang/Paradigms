@@ -1,8 +1,9 @@
-i = 0
-num = 5
+# Example 1
+i = 1 #Variable for iteration called 'i' which starts at 1
 
-while i < num  do
-   puts("Inside the loop i = #i" )
-   i +=1
-end
+until i > 5 #Until we've gone over 5
+	puts i #Output the loop count
+	i = i + 1 #Add one to the loop count
+end #End the loop
+
 
