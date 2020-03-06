@@ -11,7 +11,7 @@ class Circle
 	end
 	
 	# Setter
-	def r = (new_radius)
+	def setRadius(new_radius)
 	    @r = new_radius
 	end
 
@@ -35,7 +35,7 @@ fail unless c.area == 100 * Math::PI
 # to_s is automatically called when in string context 
 fail unless "#{c}" == "Circle at (5, 4) with radius 10"
 
-c.r(4)
+c.setRadius(4)
 puts c.@r
 
  
