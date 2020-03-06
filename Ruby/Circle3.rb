@@ -6,8 +6,8 @@ class Circle
     end 
 	
 	# accessors  
-    attr_reader :@r
-	attr_writer :@r
+    attr_reader :r
+	attr_writer :r
 	
 	
 
