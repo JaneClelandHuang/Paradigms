@@ -4,6 +4,16 @@ class Circle
         @y = y 
         @r = r 
     end 
+	
+	# Getter
+	def r()
+	    @r
+	end
+	
+	# Setter
+	def r = (new_radius)
+	    @r = new_radius
+	end
 
     def center() 
         [@x, @y] 
@@ -24,5 +34,8 @@ fail unless c.area == 100 * Math::PI
  
 # to_s is automatically called when in string context 
 fail unless "#{c}" == "Circle at (5, 4) with radius 10"
+
+c.r(4)
+puts c.@r
 
  
