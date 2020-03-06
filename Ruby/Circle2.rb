@@ -6,7 +6,7 @@ class Circle
     end 
 	
 	# Getter
-	def r()
+	def getRadius()
 	    @r
 	end
 	
@@ -36,6 +36,6 @@ fail unless c.area == 100 * Math::PI
 fail unless "#{c}" == "Circle at (5, 4) with radius 10"
 
 c.setRadius(4)
-puts c.@r
+puts c.getRadius()
 
  
