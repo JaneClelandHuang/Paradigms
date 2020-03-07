@@ -4,6 +4,12 @@ class Circle
         @y = y 
         @r = r 
     end 
+	
+	# accessors  
+    attr_reader :r
+	attr_writer :r
+	
+	
 
     def center() 
         [@x, @y] 
@@ -24,5 +30,8 @@ fail unless c.area == 100 * Math::PI
  
 # to_s is automatically called when in string context 
 fail unless "#{c}" == "Circle at (5, 4) with radius 10"
+
+c.r = 4
+puts c.r
 
  
