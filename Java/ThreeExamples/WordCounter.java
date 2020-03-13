@@ -1,3 +1,5 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -11,12 +13,15 @@ public class WordCounter {
 			inFile = new File(args[0]);
 		} else {
 			System.out.println("No filename provided");
-			exit(1);
+			System.exit(1);
 		}
 		SortedMap<String, Integer> counts = new TreeMap<>();
 		Pattern wordPattern = Pattern.compile("[a-z']+");
 		//Scanner scanner = new Scanner(System.in);
-		Scanner scanner = new Scanner(inFile);
+		Scanner scanner;
+		try {
+			scanner = new Scanner(inFile);
+		
 		System.out.println("HERE");
 		while (scanner.hasNext()) {
 			String line = scanner.nextLine().toLowerCase();
@@ -29,6 +34,10 @@ public class WordCounter {
 		}
 		for (SortedMap.Entry<String,Integer> e: counts.entrySet()) {
 			System.out.printf("%s %d\n", e.getKey(), e.getValue());
+		}
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
 		}
 	}
 }
