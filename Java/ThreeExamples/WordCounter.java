@@ -11,6 +11,7 @@ public class WordCounter {
 		Scanner scanner = new Scanner(System.in);
 		while (scanner.hasNext()) {
 			String line = scanner.nextLine().toLowerCase();
+			System.out.println(line);
 			Matcher matcher = wordPattern.matcher(line);
 			while (matcher.find()) {
 				String word = matcher.group();
