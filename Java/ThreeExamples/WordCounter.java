@@ -14,7 +14,7 @@ public class WordCounter {
 			Matcher matcher = wordPattern.matcher(line);
 			while (matcher.find()) {
 				String word = matcher.group();
-				counts.put(wordcounts.getOrDefault(word,0)+1);
+				counts.put(word,counts.getOrDefault(word,0)+1);
 			}
 		}
 		for (SortedMap.Entry<String,Integer> e: counts.entrySet()) {
