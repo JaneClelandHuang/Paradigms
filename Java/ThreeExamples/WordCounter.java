@@ -6,6 +6,7 @@ import java.util.regex.Matcher;
 
 public class WordCounter {
 	public static void main(String[] args) {
+		System.out.println("HELLO");
 		SortedMap<String, Integer> counts = new TreeMap<>();
 		Pattern wordPattern = Pattern.compile("[a-z']+");
 		Scanner scanner = new Scanner(System.in);
