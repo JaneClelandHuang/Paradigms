@@ -10,6 +10,8 @@ public class WordCounter {
 		SortedMap<String, Integer> counts = new TreeMap<>();
 		Pattern wordPattern = Pattern.compile("[a-z']+");
 		Scanner scanner = new Scanner(System.in);
+		System.out.println("HERE");
+		System.out.println(scanner);
 		while (scanner.hasNext()) {
 			String line = scanner.nextLine().toLowerCase();
 			System.out.println(line);
