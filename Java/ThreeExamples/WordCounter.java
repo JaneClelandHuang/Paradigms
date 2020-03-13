@@ -19,13 +19,11 @@ public class WordCounter {
 		Pattern wordPattern = Pattern.compile("[a-z']+");
 		//Scanner scanner = new Scanner(System.in);
 		Scanner scanner;
-		try {
-			scanner = new Scanner(inFile);
+		scanner = new Scanner(inFile);
 		
 		System.out.println("HERE");
 		while (scanner.hasNext()) {
 			String line = scanner.nextLine().toLowerCase();
-			System.out.println(line);
 			Matcher matcher = wordPattern.matcher(line);
 			while (matcher.find()) {
 				String word = matcher.group();
@@ -34,10 +32,6 @@ public class WordCounter {
 		}
 		for (SortedMap.Entry<String,Integer> e: counts.entrySet()) {
 			System.out.printf("%s %d\n", e.getKey(), e.getValue());
-		}
-		} catch (FileNotFoundException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
 		}
 	}
 }
