@@ -19,19 +19,21 @@ public class WordCounter {
 		Pattern wordPattern = Pattern.compile("[a-z']+");
 		//Scanner scanner = new Scanner(System.in);
 		Scanner scanner;
-		scanner = new Scanner(inFile);
-		
-		System.out.println("HERE");
-		while (scanner.hasNext()) {
-			String line = scanner.nextLine().toLowerCase();
-			Matcher matcher = wordPattern.matcher(line);
-			while (matcher.find()) {
-				String word = matcher.group();
-				counts.put(word,counts.getOrDefault(word,0)+1);
+		try{
+			scanner = new Scanner(inFile);
+			while (scanner.hasNext()) {
+				String line = scanner.nextLine().toLowerCase();
+				Matcher matcher = wordPattern.matcher(line);
+				while (matcher.find()) {
+					String word = matcher.group();
+					counts.put(word,counts.getOrDefault(word,0)+1);
+				}
 			}
-		}
-		for (SortedMap.Entry<String,Integer> e: counts.entrySet()) {
-			System.out.printf("%s %d\n", e.getKey(), e.getValue());
-		}
+			for (SortedMap.Entry<String,Integer> e: counts.entrySet()) {
+				System.out.printf("%s %d\n", e.getKey(), e.getValue());
+			}
+		} catch (FileNotFoundException e1) {
+			System.out.printf("Unable to open file" + inFile);
+	    }
 	}
 }
