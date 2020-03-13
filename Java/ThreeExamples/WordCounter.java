@@ -6,12 +6,18 @@ import java.util.regex.Matcher;
 
 public class WordCounter {
 	public static void main(String[] args) {
-		System.out.println("HELLO");
+		File inFile = null;
+		if (0 < args.length) {
+			inFile = new File(args[0]);
+		} else {
+			System.out.println("No filename provided");
+			exit(1);
+		}
 		SortedMap<String, Integer> counts = new TreeMap<>();
 		Pattern wordPattern = Pattern.compile("[a-z']+");
-		Scanner scanner = new Scanner(System.in);
+		//Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(inFile);
 		System.out.println("HERE");
-		System.out.println(scanner);
 		while (scanner.hasNext()) {
 			String line = scanner.nextLine().toLowerCase();
 			System.out.println(line);
