@@ -16,10 +16,10 @@ public class WordCounter2 {
 			System.out.println("No filename provided");
 			System.exit(1);
 		}
+	    Pattern nonWord = Pattern.compile("[^a-z']+");
 		FileReader fr;
 		try {
 			fr = new FileReader(inFile);
-	        Pattern nonWord = Pattern.compile("[^a-z']+");
 			new BufferedReader(fr)
 				.lines()
 				.flatMap(line->nonWord.splitAsStream(line.toLowerCase()))
@@ -34,3 +34,5 @@ public class WordCounter2 {
 		} 
 	}
 }
+
+
