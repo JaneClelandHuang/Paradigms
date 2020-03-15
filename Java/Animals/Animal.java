@@ -3,7 +3,7 @@ abstract class Animal {
 	public Animal(String name) {
 		this.name = name;
 	}
-	abstrat String sound();
+	abstract String sound();
 	public String speak() {
 		return name + " says " + sound();
 	}
