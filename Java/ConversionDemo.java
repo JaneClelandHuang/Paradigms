@@ -13,5 +13,6 @@ public class ConversionDemo {
         System.out.println(min);
         System.out.println(max);
 		System.out.println(testLongVar + testIntVar);
+		System.out.println(testIntVar + testLongVar);
     }
 }
