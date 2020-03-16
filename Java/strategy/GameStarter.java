@@ -1,9 +1,9 @@
-package edu.nd.secourse.strategy;
-import edu.nd.secourse.strategy.ducks.MallardDuck;
-import edu.nd.secourse.strategy.fly.FlyNoWay;
-import edu.nd.secourse.strategy.fly.FlyWithWings;
-import edu.nd.secourse.strategy.quack.Peep;
-import edu.nd.secourse.strategy.quack.QuackLikeADuck;
+package strategy;
+import strategy.ducks.MallardDuck;
+import strategy.fly.FlyNoWay;
+import strategy.fly.FlyWithWings;
+import strategy.quack.Peep;
+import strategy.quack.QuackLikeADuck;
 
 /**
  * Sets up game
