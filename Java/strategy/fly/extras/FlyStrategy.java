@@ -1,4 +1,4 @@
-package edu.nd.secourse.strategy.fly.extras;
+package strategy.fly.extras;
 
 public class FlyStrategy {
 	public void fly(){

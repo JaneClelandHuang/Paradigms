@@ -1,4 +1,5 @@
 package strategy;
+
 import strategy.ducks.MallardDuck;
 import strategy.fly.FlyNoWay;
 import strategy.fly.FlyWithWings;

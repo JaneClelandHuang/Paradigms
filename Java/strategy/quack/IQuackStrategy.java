@@ -1,4 +1,4 @@
-package edu.nd.secourse.strategy.quack;
+package strategy.quack;
 
 /**
  * interface for quack strategies.  Currently only one behavior but we could imagine more

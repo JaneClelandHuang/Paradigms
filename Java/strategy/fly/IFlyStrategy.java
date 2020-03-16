@@ -1,4 +1,4 @@
-package edu.nd.secourse.strategy.fly;
+package strategy.fly;
 
 public interface IFlyStrategy {
 	public void fly();

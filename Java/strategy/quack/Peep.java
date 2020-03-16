@@ -1,4 +1,4 @@
-package edu.nd.secourse.strategy.quack;
+package strategy.quack;
 
 public class Peep implements IQuackStrategy{
 

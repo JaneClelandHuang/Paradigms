@@ -1,6 +1,6 @@
-package edu.nd.secourse.strategy.fly;
+package strategy.fly;
 
-import edu.nd.secourse.strategy.fly.extras.FlyStrategy;
+import strategy.fly.extras.FlyStrategy;
 
 public class FlyByJumping extends FlyStrategy{
 

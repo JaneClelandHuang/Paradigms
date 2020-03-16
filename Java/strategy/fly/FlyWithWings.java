@@ -1,4 +1,4 @@
-package edu.nd.secourse.strategy.fly;
+package strategy.fly;
 
 public class FlyWithWings implements IFlyStrategy{
 

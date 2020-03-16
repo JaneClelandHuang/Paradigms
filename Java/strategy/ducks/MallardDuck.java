@@ -1,8 +1,8 @@
-package edu.nd.secourse.strategy.ducks;
+package strategy.ducks;
 
-import edu.nd.secourse.strategy.fly.IFlyStrategy;
-import edu.nd.secourse.strategy.quack.IQuackStrategy;
-import edu.nd.secourse.strategy.quack.QuackLikeADuck;
+import strategy.fly.IFlyStrategy;
+import strategy.quack.IQuackStrategy;
+import strategy.quack.QuackLikeADuck;
 
 /**
  * Mallard duck for use in fake game
