@@ -6,10 +6,12 @@ import java.util.Set;
 public class ListAndSetExample {
 	public static void main(String[] args) {
 		List<String> words = Arrays.asList("do","while","if","a");
-		Set<Integer> sizes = new HashSet<String>();
+		Set<Integer> sizes = new HashSet<>();
 		for(String word:words) {
 			sizes.add(word.length());			
 		}
 		assert sizes.equals(new HashSet<Integer>(Arrays.asList(5,2,1)));
 	}
 }
+
+
