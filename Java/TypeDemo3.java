@@ -1,6 +1,6 @@
-class TypeDemo3 { 
+class Demo { 
 	int a, b; 	
-	public TypeDemo3(){  
+	public Demo(){  
 		a = 10; 
 		b = 20; 
 	} 	
@@ -9,10 +9,10 @@ class TypeDemo3 {
 	} 
 } 
 
-class Test {
+class TypeDemo3 {
 	public static void main(String[] args) { 
-		TypeDemo3 obj1 = new TypeDemo3(); 
-		TypeDemo3 obj2 = obj1; 
+		Demo obj1 = new Demo(); 
+		Demo obj2 = obj1; 
 
 		obj1.a += 1; 
 		obj1.b += 1; 
