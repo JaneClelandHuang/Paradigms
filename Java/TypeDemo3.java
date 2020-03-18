@@ -1,7 +1,6 @@
-class TypeDemo3
-{ 
+class TypeDemo3 { 
 	int a, b; 	
-	public TypeDemo3()  
+	public TypeDemo3(){  
 		a = 10; 
 		b = 20; 
 	} 	
