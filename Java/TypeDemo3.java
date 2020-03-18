@@ -23,3 +23,31 @@ class TypeDemo3 {
 		obj2.print(); 
 	} 
 } 
+
+/*
+(A) 
+Compile error
+
+(B) CORRECT ANSWER!
+values of obj1: 
+a = 11 b = 21
+values of obj2: 
+a = 11 b = 21
+
+(C)
+values of obj1: 
+a = 11 b = 21
+values of obj2: 
+a = 10 b = 20
+
+(D)
+
+values of obj1: 
+a = 11 b = 20
+values of obj2: 
+a = 10 b = 21
+
+(E) Run time error
+*/
+
+
