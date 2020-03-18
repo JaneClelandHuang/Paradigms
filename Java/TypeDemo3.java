@@ -1,7 +1,7 @@
 class TypeDemo3
 { 
 	int a, b; 	
-	demo()  
+	public TypeDemo3()  
 		a = 10; 
 		b = 20; 
 	} 	
@@ -12,8 +12,8 @@ class TypeDemo3
 
 class Test {
 	public static void main(String[] args) { 
-		demo obj1 = new demo(); 
-		demo obj2 = obj1; 
+		TypeDemo3 obj1 = new TypeDemo3(); 
+		TypeDemo3 obj2 = obj1; 
 
 		obj1.a += 1; 
 		obj1.b += 1; 
