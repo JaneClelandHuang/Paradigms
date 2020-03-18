@@ -6,7 +6,7 @@ import java.util.Set;
 public class ListAndSetExample {
 	public static void main(String[] args) {
 		List<String> words = Arrays.asList("do","while","if","a");
-		Set<Integer> sizes = new HashSet<Integer>();
+		Set<Integer> sizes = new HashSet<String>();
 		for(String word:words) {
 			sizes.add(word.length());			
 		}
