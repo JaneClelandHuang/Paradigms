@@ -12,10 +12,10 @@ public class Person {
 		if (getClass() != other.getClass()) return false;
 		Person person = (Person)other;
 		return (
-			(this.name.equals(person.name) &&
-			 this.phone.equals(person.phone) &&
-			 this.name != null &&
-			 this.phone != null
+			this.name.equals(person.name) &&
+			this.phone.equals(person.phone) &&
+			this.name != null &&
+			this.phone != null
 		);
 	}
 	
