@@ -9,6 +9,7 @@ public class Student2{
 		this.city=city;  
 	}  
 	
+	@Override
 	public String toString(){ //overriding the toString() method  
 		return rollno+" "+name+" "+city;  
 	}  
