@@ -18,10 +18,10 @@ public class Person {
 			this.phone != null
 		);
 	}
-	
+
 	public static void main(String[] args){
 		Person p1 = new Person("Fred","111-111-1111");
-		Person p2 = new Person("Fred","111-111-1111");
+		Person p2 = new Person("Fred","111-111-1112");
 		System.out.println(p1.equals(p2));
 		
 	}
