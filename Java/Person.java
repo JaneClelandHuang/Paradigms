@@ -23,5 +23,6 @@ public class Person {
 		Person p1 = new Person("Fred","111-111-1111");
 		Person p2 = new Person("Fred","222-222-2222");
 		System.out.println(p1.equals(p2));
+	}
 }
 
