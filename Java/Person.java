@@ -21,8 +21,9 @@ public class Person {
 	
 	public static void main(String[] args){
 		Person p1 = new Person("Fred","111-111-1111");
-		Person p2 = new Person("Fred","222-222-2222");
+		Person p2 = new Person("Fred","111-111-1111");
 		System.out.println(p1.equals(p2));
+		
 	}
 }
 
