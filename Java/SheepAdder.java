@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 abstract class Animal{
 	String name;
 	Animal(String name){
