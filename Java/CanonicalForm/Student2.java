@@ -14,8 +14,8 @@ public class Student2{
 	}  
       
 	public static void main(String args[]){  
-		Student2 s1=new Student(101,"Raj","lucknow");  
-		Student2 s2=new Student(102,"Vijay","ghaziabad");  
+		Student2 s1 = new Student2(101,"Raj","lucknow");  
+		Student2 s2 = new Student2(102,"Vijay","ghaziabad");  
          
 		System.out.println(s1);//compiler writes here s1.toString()  
 		System.out.println(s2);//compiler writes here s2.toString()      }  
