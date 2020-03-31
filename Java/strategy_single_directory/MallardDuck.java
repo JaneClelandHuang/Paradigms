@@ -1,8 +1,3 @@
-
-
-import strategy.fly.*;
-import strategy.quack.*;
-
 /**
  * Mallard duck for use in game
  * @author Jane
