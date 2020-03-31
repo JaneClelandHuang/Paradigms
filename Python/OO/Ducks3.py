@@ -1,7 +1,5 @@
-# Ducks basic
+# Strategy Pattern implemented
 from abc import ABC, abstractmethod
-#from QuackBehavior import QuackBehavior as qb
-#from FlyBehavior import FlyBehavior as fb
 from QuackBehavior import *
 from FlyBehavior import *
 

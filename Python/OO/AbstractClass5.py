@@ -8,6 +8,7 @@ class AbstractClassExample(ABC):
         self.value = value
         super().__init__()
     
+    @abstractmethod
     def do_something(self):
         pass
 		

@@ -15,3 +15,4 @@ class DoAdd42(AbstractClassExample):
     pass
 
 x = DoAdd42(4)
+

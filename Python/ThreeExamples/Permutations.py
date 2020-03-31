@@ -14,3 +14,4 @@ if len(sys.argv) != 2:
     sys.exit(1) 
 word = sys.argv[1] 
 generatePermutations(list(word), len(word)-1)		
+

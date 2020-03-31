@@ -37,8 +37,7 @@ class Figure(Leaf):
         print(self.caption)
         print(self.imageName + " Image displayed here")    
 
-
-# Build the book content
+# Build the book content 
 book = Book("Programming Paradigms")
 
 book.add(FrontMatter())
@@ -55,4 +54,6 @@ chapter2.add(Paragraph())
 chapter2.add(Figure("Python Image","Python Timeline"))
 
 # Now print it
+# We only have to make the call on the parent!
 book.performOperation()
+

@@ -24,3 +24,4 @@ ferrari.show() # same output as car.show(ferrari)
 # Behind the scene, in every instance method 
 # call, python sends the instances also with 
 # that method call like car.show(audi) 
+

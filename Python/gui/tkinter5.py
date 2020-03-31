@@ -30,7 +30,7 @@ class MouseMover():
             yc = widget.canvasy(event.y)
 			
             # Compute offset
-            self.offset = (self.previous[0]-xc,self.previous[1]-yc)
+            #self.offset = (self.previous[0]-xc,self.previous[1]-yc)
             canvas.move(self.rectangle, xc-self.previous[0], yc-self.previous[1])
             self.previous = (xc, yc)
             print("NEW")

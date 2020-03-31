@@ -8,3 +8,6 @@ for line in sys.stdin:
 
 for word, count in sorted(counts.items()): 
     print(word, count)
+    
+    
+    

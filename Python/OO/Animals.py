@@ -24,3 +24,4 @@ if __name__=='__main__':
     print(c.speak())
     assert c.speak() == 'Bessie says moooo'
     assert Sheep('Little Lamb').speak() == 'Little Lamb says baaaa'
+
