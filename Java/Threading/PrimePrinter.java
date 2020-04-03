@@ -1,6 +1,6 @@
 public class PrimePrinter {
 	public static void main(String[] args) {
-		for (int i = 1; i <= 100; i++) {
+		for (int i = 1; i <= 10000; i++) {
 			final int candidate = i;
 			new Thread(() -> {
 				for (int divisor = 2; divisor <= candidate; divisor++){
