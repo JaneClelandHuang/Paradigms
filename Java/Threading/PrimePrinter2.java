@@ -13,8 +13,8 @@ public class PrimePrinter {
 							break;
 						}
 					}
-				}).start();
-			}
+				}
+			}).start();
 		}
 	}
 }
