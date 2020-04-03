@@ -11,7 +11,6 @@ public class PrimePrinter2 {
 					for (int divisor = 2; divisor <= candidate; divisor++){
 						if (divisor == candidate) {
 							primeSum += candidate;
-							}
 						} else if (candidate % divisor == 0) {
 							break;
 						}
