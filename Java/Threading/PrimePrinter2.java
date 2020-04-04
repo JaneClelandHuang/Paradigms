@@ -5,7 +5,7 @@ public class PrimePrinter2 {
 		Random rand = new Random();
 		for (int i = 1; i <= 100; i++) {
 			final int candidate = i;
-			new Thread((Integer.toString(i)) -> {
+			new Thread(() -> {
 				for (int divisor = 2; divisor <= candidate; divisor++){
 					if (divisor == candidate) {
 						try {
