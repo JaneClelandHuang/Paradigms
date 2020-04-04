@@ -7,8 +7,8 @@ public class PrimePrinter2 {
 				synchronized (System.out) {
 					System.out.println("Starting " + Thread.currentThread().getName());
 				}
-			int size = (int)100000/j;
-			for (int i = 1; i <= size; i++) {
+
+			for (int i = 1; i <= 100000; i++) {
 				final int candidate = i;
 				for (int divisor = 2; divisor <= candidate; divisor++){
 					if (divisor == candidate) {
