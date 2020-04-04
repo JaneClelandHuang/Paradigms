@@ -1,8 +1,11 @@
 public class Livelock {
 
     public static void main (String[] args) {
-        final Worker worker1 = new Worker("Worker 1 ", true);
-        final Worker worker2 = new Worker("Worker 2", true);
+        //final Worker worker1 = new Worker("Worker 1 ", true);
+        //final Worker worker2 = new Worker("Worker 2", true);
+		
+		final Worker2 worker1 = new Worker2("Worker 1 ", true);
+        final Worker2 worker2 = new Worker2("Worker 2", true);
 
         final CommonResource s = new CommonResource(worker1);
 
@@ -15,3 +18,5 @@ public class Livelock {
         }).start();
     }
 }
+
+
