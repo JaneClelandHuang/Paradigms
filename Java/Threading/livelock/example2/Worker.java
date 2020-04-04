@@ -1,8 +1,8 @@
-public class Worker2 {
+public class Worker {
     private String name;
     private boolean active;
 
-    public Worker2 (String name, boolean active) {
+    public Worker (String name, boolean active) {
         this.name = name;
         this.active = active;
     }
