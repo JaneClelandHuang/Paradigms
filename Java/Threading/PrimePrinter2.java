@@ -1,6 +1,6 @@
 import java.util.Random; 
 
-public class PrimePrinter {
+public class PrimePrinter2 {
 	public static void main(String[] args) {
 		Random rand = new Random();
 		for (int i = 1; i <= 100; i++) {
