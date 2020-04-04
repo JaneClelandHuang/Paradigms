@@ -1,3 +1,5 @@
+import java.util.Random; 
+
 public class PrimePrinter {
 	public static void main(String[] args) {
 		Random rand = new Random();
