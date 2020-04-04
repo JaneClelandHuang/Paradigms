@@ -8,7 +8,9 @@ public class PrimePrinter {
 			new Thread(() -> {
 				for (int divisor = 2; divisor <= candidate; divisor++){
 					if (divisor == candidate) {
-						Thread.sleep(rand.nextInt(2000));
+						try {
+							Thread.sleep(rand.nextInt(2000));
+						} catch (Exception e){}
 						synchronized (System.out) {
 							System.out.print(" " + candidate);
 						}
