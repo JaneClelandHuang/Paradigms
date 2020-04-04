@@ -13,8 +13,8 @@ public class PrimePrinter {
 						} catch (Exception e){}
 						//synchronized (System.out) {
 							//System.out.print(" " + candidate);
-							System.out.print(" " + i);
-						}
+						System.out.print(" " + i);
+						//}
 					} else if (candidate % divisor == 0) {
 						break;
 					}
