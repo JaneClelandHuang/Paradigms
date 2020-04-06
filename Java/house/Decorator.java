@@ -1,5 +1,3 @@
-package house;
-
 public class Decorator {
 	
 	Composite myHouse;  // This is the important root node of your composite structure

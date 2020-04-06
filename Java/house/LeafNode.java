@@ -1,5 +1,3 @@
-package house;
-
 // This is the leaf node.
 // It has not walls or carpets so we won't give it any colors.
 public class LeafNode implements Component{

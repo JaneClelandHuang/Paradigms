@@ -1,6 +1,3 @@
-package house;
-
-
 // The interface should declare all methods that you want to be
 // overridden in the leaf and composite nodes.
 // I show examples of three operations
