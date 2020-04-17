@@ -30,6 +30,24 @@
 (println "Non transient version")
 (time (take 5000 (fib)))
 
+; Transient example
+(defn vrange [n]
+  (loop [i 0 v []]
+    (if (< i n)
+      (recur (inc i) (conj v i))
+      v)))
+
+(defn vrange2 [n]
+  (loop [i 0 v (transient [])]
+    (if (< i n)
+      (recur (inc i) (conj! v i))
+      (persistent! v))))
+
+(println "Non Transient")
+(time (vrange 1000))
+(time (println "Transient"))
+(vrange2 1000)
+
 ; Transient data structure for building
 (defn fibTransient [n] 
 	(loop [a 0 b 1 result (transient [0])] 
