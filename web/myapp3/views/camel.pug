@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  script(src='javascripts/client.js')
+  .topnav
+    button#camelButton Camel
+    button#monkeyButton Monkey
+    button#crocButton Crocodile
+    button#cowButton Cow 
+    script(src='javascripts/client.js')
+  .main
+    h1 Our ZOOm
+    p Welcome to Animal-Zoom, a camelly place for animals to meet.
+    p Hello #{animal_name}
+    //img(src='images/camel.jpg',style='width:500px')
+    p More info here.

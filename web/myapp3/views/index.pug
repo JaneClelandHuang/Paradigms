@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  
+  .topnav
+
+    button#camelButton Camel
+    button#monkeyButton Monkey
+    button#crocButton Crocodile
+    button#cowButton Cow 
+    script(src='javascripts/client.js')
+    //a(href='http://localhost:3000/camel') Camel
+    //a(href='http://localhost:3000/monkey') Monkey   
+    //a(href='http://localhost:3000/crocodile') Crocodile
+    //a(href='http://localhost:3000/cow') Cow
+  .main
+    h1 Our ZOOm
+    p Welcome to Animal-Zoom, a fun place for animals to meet.
+    p Hello #{animal_name}
+    img(src='images/zoo.jpg',style='width:500px')
+    p More info here.
+
+
