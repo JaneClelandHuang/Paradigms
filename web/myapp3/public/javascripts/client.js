@@ -23,3 +23,15 @@ cowButton.addEventListener('click', function(e) {
   console.log('Cow button was clicked');
   location.href = "http://localhost:3000/cow"; 
 });
+
+function getImage(animal) {
+  switch(animal) {
+    case "camel":
+      myImage = img(src='images/camel.jpg',style='width:500px')
+    break;
+    default:
+      myImage = img(src='images/zoo.jpg',style='width:500px')
+    break;
+  }
+  document.getElementById("animalImage").innerHTML = myImage;
+}

@@ -8,8 +8,12 @@ exports.clicked = function(req, res, next) {
   res.redirect('images/camel');
 }
 
+exports.zoo = function(req, res, next) {
+   res.render('camel', { title: 'Hello Express' , animal_name:'Zoo Animals', image_name: "images/zoo.jpg"}); 
+}
+
 exports.camel = function(req, res, next) {
-   res.render('camel', { title: 'Hello Express' , animal_name:'Camel', image_name: "images/camel.jpg"}); 
+   window.getImage("camel");
 }
 
 exports.croc = function(req, res, next) {
