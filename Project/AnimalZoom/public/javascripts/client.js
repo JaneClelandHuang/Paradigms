@@ -15,6 +15,7 @@ const zooButton = document.getElementById('zooButton');
 zooButton.addEventListener('click', function(e) {
   console.log('Zoo button was clicked');
   location.href = myURL.concat("/zoo");
+  console.log("Pushing " + href);
   //document.getElementById("AnimalImage").src ="images/zoo.jpg"
   //document.getElementById("p2").innerHTML = "Welcome to the zoo.";
   //document.getElementById("p1").innerHTML = "Zoo Animals"; 
