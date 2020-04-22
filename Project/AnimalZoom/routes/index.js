@@ -5,6 +5,7 @@ let index = require('../controllers/index')
 
 /* GET home page. */
 router.get('/',index.index );
+router.get('/zoom',index.zoom);
 router.get('/zoo',index.zoo);
 router.get('/camel',index.camel);
 router.get('/monkey',index.monkey);
