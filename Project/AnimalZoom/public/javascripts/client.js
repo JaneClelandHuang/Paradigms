@@ -1,6 +1,5 @@
 console.log('Client-side code running');
-const myURL = "http://localhost:3000";
-
+const myURL = "http://localhost:51000";
 
 const zoomButton = document.getElementById('zoomButton');
 zoomButton.addEventListener('click', function(e) {
