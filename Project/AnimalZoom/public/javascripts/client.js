@@ -1,9 +1,9 @@
 console.log('Client-side code running');
 // LOCAL USE:
-// const myURL = "http://localhost:3000";
+const myURL = "http://localhost:3000";
 
 // STUDENT 04 use:
-const myURL = "http://student04.cse.nd.edu:51000";
+//const myURL = "http://student04.cse.nd.edu:51000";
 
 const zoomButton = document.getElementById('zoomButton');
 zoomButton.addEventListener('click', function(e) {
