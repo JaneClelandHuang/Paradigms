@@ -31,3 +31,7 @@ exports.monkey = function(req, res, next) {
    res.render('monkey', { about: 'Monkeys live in trees, grasslands, mountains, forests, and on high plains. Each monkey has its own unique fingerprints.' , animal_name:'Monkey'}); 
 }
 
+exports.map = function(req, res, next) {
+   res.render('map', { markers: 'Markers will go here.'}); 
+}
+

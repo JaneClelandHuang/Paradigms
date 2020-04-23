@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  //<body onload="myFunction()">
+
   h1 Animal-Zoom, a place for animals to meet.
   .topnav
     button#zooButton Zoo
@@ -10,11 +10,13 @@ block content
     button#crocButton Crocodile
     button#cowButton Cow 
     button#zoomButton ZoomTime
+    button#mapButton ZooMap
     script(src='javascripts/client.js')
   .main
     h1 Hello #{animal_name}
     p #{about}
-    img(src='images/zoo.jpg',style='width:500px')
-    
+    img(src='images/zoo.jpg',style='width:500px') 
+
+
 
 

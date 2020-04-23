@@ -11,5 +11,6 @@ router.get('/camel',index.camel);
 router.get('/monkey',index.monkey);
 router.get('/cow',index.cow);
 router.get('/crocodile',index.croc);
+router.get('/map',index.map);
 
 module.exports = router;
