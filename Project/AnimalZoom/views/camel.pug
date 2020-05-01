@@ -8,11 +8,13 @@ block content
     button#camelButton Camel
     button#monkeyButton Monkey
     button#crocButton Crocodile
-    button#cowButton Cow 
+    button#cowButton Cow
     button#zoomButton ZoomTime
     button#mapButton ZooMap
     script(src='javascripts/client.js')
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
   .main
     h1 Hello #{animal_name}
     p #{about}
+    button#getData(onclick='getData()') Click me to get data from server in json format
     img(src='images/camel.jpg',style='width:500px')
